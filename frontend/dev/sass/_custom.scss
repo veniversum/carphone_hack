@@ -1,1 +1,10 @@
-/* hello!*/
+$brand-primary: #161b7a;
+$brand-secondary: #522E6E;
+
+.navbar .brand-logo {
+  color: $brand-primary;
+  font-size: 2em;
+  &:hover {
+    color: darken($brand-primary, 10%);
+  }
+}
