@@ -8,11 +8,10 @@ var bowerSources = [
     "./bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"
 ];
 
-var sassSources = [
-    './dev/sass/**/*.scss'];
-
-
-var jsSources = './dev/js/**/*.js';
+var jsSources = [
+    // list all the js sources to be used, in order of dependencies
+    './dev/js/main.js'
+];
 
 gulp.task("js", function() {
     var srcs = bowerSources.concat(jsSources);
