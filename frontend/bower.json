@@ -1,0 +1,29 @@
+{
+  "name": "carphone_hack",
+  "description": "Carphone Hack",
+  "main": "",
+  "authors": [
+    "ILW Chicken Curry team: Jakub Kowalczyk"
+  ],
+  "license": "LGPL-3.0",
+  "keywords": [
+    "smart",
+    "easy",
+    "search",
+    "products",
+    "laptops"
+  ],
+  "homepage": "https://github.com/veniversum/carphone_hack",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0"
+  }
+}

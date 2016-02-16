@@ -1,0 +1,11 @@
+{
+  "name": "carphone_hack",
+  "version": "0.0.1",
+  "description": "Carphone Hack",
+  "repository": "https://github.com/veniversum/carphone_hack",
+  "author": "ILW Chicken Curry team: Jakub Kowalczyk",
+  "license": "LGPL-3.0",
+  "dependencies": {
+    "bower": "^1.7.7"
+  }
+}
