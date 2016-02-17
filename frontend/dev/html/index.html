@@ -6,73 +6,29 @@
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 </head>
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand brand-logo" href="#">Chicken Currys</a>
-            </div>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand brand-logo" href="#">Chicken Currys</a>
         </div>
-    </nav>
 
-    <header id="header" role="banner" class="row nosp">
-
-        <!-- Start Header -->
-        <h1 id="logo" class="logo">
-            <a href="http://www.currys.co.uk/gbuk/s/home.html" title="Back to home" onclick="s_objectID=&quot;http://www.currys.co.uk/gbuk/s/home.html_1&quot;;return this.s_oc?this.s_oc(e):true">
-                <img src="http://currys.cdn.dixons.com/grafx/images/logos/currys_logo.png" alt="Currys">
-            </a>
-        </h1>
-
-        <form class="search" id="searchForm" method="POST" action="http://www.currys.co.uk/gbuk/s_action/search_keywords/index.html">
-            <fieldset>
-                <input type="hidden" value="keyword_search" name="subaction">
-                <input type="hidden" value="" name="submitted_by" id="submitted_by">
-                <input type="search" id="search" autocomplete="off" spellcheck="false" name="search-field" placeholder="Product name or item no." required="" speech="" x-webkit-speech="">
-                <div class="autocomplete-container" style="display: none;"><ul class="terms"></ul><ul class="sayt"></ul></div><button id="search_bttn" type="submit" class="button">Search</button>
-            </fieldset>
-        </form>
-
-        <div id="toolbar">
-            <ul role="menubar">
-                <li role="menuitem" class="touch">
-                    <a href="#nav" onclick="s_objectID=&quot;http://www.currys.co.uk/gbuk/index.html#nav_1&quot;;return this.s_oc?this.s_oc(e):true">
-                        <i class="icon-reorder"></i>
-                        <span class="noMobile">Menu</span>
-                    </a>
-                </li>
-                <li role="menuitem" class="touch searchBtn">
-                    <a href="#searchForm" onclick="s_objectID=&quot;http://www.currys.co.uk/gbuk/index.html#searchForm_1&quot;;return this.s_oc?this.s_oc(e):true">
-                        <i class="icon-search"></i>
-                        <span class="noMobile">Search</span>
-                    </a>
-                </li>
-                <li role="menuitem">
-                    <a id="stores_bttn" class="iLink" href="http://www.currys.co.uk/gbuk/s/find-a-store.html" onclick="s_objectID=&quot;http://www.currys.co.uk/gbuk/s/find-a-store.html_1&quot;;return this.s_oc?this.s_oc(e):true">
-                        <i class="icon-map-marker icon-large"></i>
-                        <span class="noMobile">Stores</span>
-                    </a>
-                </li>
-                <li role="menuitem">
-                    <div id="accountDropC"><a id="account_btn" class="iLink" href="https://secure.currys.co.uk/gbuk/s/authentication.html" onclick="s_objectID=&quot;https://secure.currys.co.uk/gbuk/s/authentication.html_1&quot;;return this.s_oc?this.s_oc(e):true"><i class="icon-user icon-large"></i>&nbsp;<span class="noMobile">Account</span></a></div>
-                </li>
-                <li class="cart" role="menuitem">
-                    <a id="basket_bttn" class="button icon" href="http://www.currys.co.uk/gbuk/o/initorder/basket-confirmation.html" onclick="s_objectID=&quot;http://www.currys.co.uk/gbuk/o/initorder/basket-confirmation.html_1&quot;;return this.s_oc?this.s_oc(e):true">
-                        <i class="dcg-icon-basket"></i>
-                <span class="noMobile">
-                    Basket</span>
-                        <span id="cart"><span class="qty empty">0</span></span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!-- End Header -->
-
-    </header>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
 </body>
 </html>
