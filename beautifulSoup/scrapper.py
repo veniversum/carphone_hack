@@ -66,7 +66,7 @@ for link in linkLaptop:
     # add details for this product to the master list
     listOfdetails.append(details)
     # print details
-    # print len(details)
+    # print len(details)sq
 
 # Now, generate the sql from the dictionaries
 connection = sqlite3.connect('specs.db') #connects to the db in the current directory
