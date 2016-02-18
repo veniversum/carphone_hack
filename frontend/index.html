@@ -26,158 +26,122 @@
         </div>
         <div class="small-12 medium-4 columns">
             <div class="float-right">
-            <a class="button-hollow-dark"><i class="fa fa-map-marker"></i> Stores</a>
-            <a class="button-hollow-dark"><i class="fa fa-user"></i> Account</a>
-            <button type="button" class="button"><i class="fa fa-shopping-basket"></i> Basket</button>
+                <a class="button-hollow-dark"><i class="fa fa-map-marker"></i> Stores</a>
+                <a class="button-hollow-dark"><i class="fa fa-user"></i> Account</a>
+                <button type="button" class="button"><i class="fa fa-shopping-basket"></i> Basket</button>
             </div>
         </div>
     </div>
 </div>
 <nav id="" class="row">
     <div class="columns expand clearfix">
-    <ul class="menu align-center currys-menu">
-        <li><a href="#"><i class="fa fa-home"></i></a></li>
-        <li><a href="#">Kitchen Appliances</a></li>
-        <li><a href="#">Small Appliances</a></li>
-        <li><a href="#">TV & Entertainment</a></li>
-        <li><a href="#">Cameras</a></li>
-        <li><a href="#">Audio</a></li>
-        <li><a href="#">Computing</a></li>
-        <li><a href="#">PC Accessories</a></li>
-        <li><a href="#">Phones</a></li>
-        <li><a href="#">Smart Tech</a></li>
-    </ul>
+        <ul class="menu align-center currys-menu">
+            <li><a href="#"><i class="fa fa-home"></i></a></li>
+            <li><a href="#">Kitchen Appliances</a></li>
+            <li><a href="#">Small Appliances</a></li>
+            <li><a href="#">TV & Entertainment</a></li>
+            <li><a href="#">Cameras</a></li>
+            <li><a href="#">Audio</a></li>
+            <li><a href="#">Computing</a></li>
+            <li><a href="#">PC Accessories</a></li>
+            <li><a href="#">Phones</a></li>
+            <li><a href="#">Smart Tech</a></li>
+        </ul>
     </div>
 </nav>
 
 
-
-
-
 <div class="row">
-    
-</div>
+    <div class="small-12 columns">
+        <h2>Currys Computer Assistant</h2>
+        <p>Welcome to our smart assistant that will guide you through the process of
+            choosing the right desktop or laptop! Please answer a couple of questions and we will
+            tailor some suggestions for you.</p>
+        <div id="page1">
 
-<div class="row">
-    <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
+            <h4>What is the purpose of this computer?</h4>
+            <fieldset id="main-purpose" class="fieldset">
+                <legend>Check the boxes if you think you will use the computer for:</legend>
+                <input id="gaming" type="checkbox"><label for="gaming">Gaming</label>
+                <input id="media" type="checkbox"><label for="media">Media</label>
+                <input id="business" type="checkbox"><label for="business">Business</label>
+                <input id="home-use" type="checkbox"><label for="home-use">Home use</label>
 
-        <div class="row">
-            <div class="large-12 columns">
-                <div class="primary callout">
-                    <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout
-                        element so you can see where the columns are - it's not required at all for the grid.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="large-6 medium-6 columns">
-                <div class="primary callout">
-                    <p>Six columns</p>
-                </div>
-            </div>
-            <div class="large-6 medium-6 columns">
-                <div class="primary callout">
-                    <p>Six columns</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="large-4 medium-4 small-4 columns">
-                <div class="primary callout">
-                    <p>Four columns</p>
-                </div>
-            </div>
-            <div class="large-4 medium-4 small-4 columns">
-                <div class="primary callout">
-                    <p>Four columns</p>
-                </div>
-            </div>
-            <div class="large-4 medium-4 small-4 columns">
-                <div class="primary callout">
-                    <p>Four columns</p>
-                </div>
-            </div>
-        </div>
+            </fieldset>
 
-        <hr/>
+            <fieldset id="choose-game-tier" class="fieldset">
+                <legend>Okay then, what games will you play on your new laptop?</legend>
+                <div class="row">
+                    <div class="medium-4 small-12 columns high-end-games">
+                        <input type="radio" name="game-tier" value="high" id="high-end" required><label for="high-end">High-end</label>
+                        <p class="explanation">
+                            I would like to play the newest games that are rich in 3D graphics. These games need a lot
+                            of processing power from the computer
+                            and require a dedicated high-performance graphics card that will be able to able to handle
+                            these requirements.
+                            Desktop computers usually have better graphics cards - space is not a constraint and
+                            powerful graphics cards tend
+                            to be bulky.
 
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-            <div class="row">
-                <div class="large-12 columns">
-                    <label>Input Label</label>
-                    <input type="text" placeholder="large-12.columns"/>
-                </div>
-            </div>
-            <div class="row">
-                <div class="large-4 medium-4 columns">
-                    <label>Input Label</label>
-                    <input type="text" placeholder="large-4.columns"/>
-                </div>
-                <div class="large-4 medium-4 columns">
-                    <label>Input Label</label>
-                    <input type="text" placeholder="large-4.columns"/>
-                </div>
-                <div class="large-4 medium-4 columns">
-                    <div class="row collapse">
-                        <label>Input Label</label>
-                        <div class="input-group">
-                            <input type="text" placeholder="small-9.columns" class="input-group-field"/>
-                            <span class="input-group-label">.com</span>
+                        </p>
+                        <strong>Insert some background images here</strong>
+                        <p class="explanation">
+                            Example games: The Witcher 3, GTA V
+                        </p>
+                    </div>
+                    <div class="medium-4 small-12 columns ">
+                        <div class="mid-end-games">
+                            <input type="radio" name="game-tier" value="high" id="mid-end" required><label
+                                for="mid-end">Mid-end</label>
+                            <p class="explanation">
+                                I would only like to play games that came out some time ago or are not that
+                                graphics-heavy.
+                                A slower graphics card will do the job here and will give a better value for money.
+
+                            </p>
+                            <strong>And here</strong>
+                            <p class="explanation">
+                                Example games: The Elder Scrolls V: Skyrim, FIFA 16
+                            </p>
+                        </div>
+                    </div>
+                    <div class="medium-4 small-12 columns">
+                        <div class="low-end-games">
+                            <input type="radio" name="game-tier" value="high" id="low-end"
+                                   required><label for="low-end">Low-end</label>
+                            <p class="explanation">
+                                I would only like to play casual games, or games that run in browser, or old-school stuff.
+                                A dedicated graphics card is most likely not needed for those type of games.
+                            </p>
+                            <strong>And here</strong>
+                            <p class="explanation">
+                                Example games: Candy Crush Saga, Game of War, Baldurs Gate II
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="large-12 columns">
-                    <label>Select Box</label>
-                    <select>
-                        <option value="husker">Husker</option>
-                        <option value="starbuck">Starbuck</option>
-                        <option value="hotdog">Hot Dog</option>
-                        <option value="apollo">Apollo</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="large-6 medium-6 columns">
-                    <label>Choose Your Favorite</label>
-                    <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio
-                    1</label>
-                    <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio
-                    2</label>
-                </div>
-                <div class="large-6 medium-6 columns">
-                    <label>Check these out</label>
-                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                    <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="large-12 columns">
-                    <label>Textarea Label</label>
-                    <textarea placeholder="small-12.columns"></textarea>
-                </div>
-            </div>
-        </form>
-    </div>
+            </fieldset>
+            <fieldset class="fieldset choose-media-types">
+                <legend>What kind of media? Tick all that apply:</legend>
+                <input id="photo-editing" type="checkbox"><label for="photo-editing">Photo editing</label>
+                <input id="watching-videos" type="checkbox"><label for="watching-videos">Watching
+                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="High Definition">HD</span>
+                videos</label>
+                <input id="video-editing" type="checkbox"><label for="video-editing">Video editing</label>
+                <input id="audio-playback" type="checkbox"><label for="audio-playback">
+                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="High Definition">HD</span>
+                audio playback
+            </label>
+                <input id="audio-editing" type="checkbox"><label for="audio-editing">Audio editing/Music production</label>
 
-    <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="button">Simple Button</a><br/>
-            <a href="#" class="success button">Success Btn</a><br/>
-            <a href="#" class="alert button">Alert Btn</a><br/>
-            <a href="#" class="secondary button">Secondary Btn</a></p>
-        <div class="callout">
-            <h5>So many components, girl!</h5>
-            <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with
-                details on making them your own.</p>
-            <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
+            </fieldset>
+            <div class="expanded button-group">
+                <a class="button">Next</a>
+            </div>
         </div>
     </div>
 </div>
+
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/what-input/what-input.js"></script>
