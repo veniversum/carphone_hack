@@ -72,8 +72,7 @@ def getProducts(linkLaptop):
             # only getting the information we require
             if tableHeader in param:
                 tableDetails = tr.td.text
-                # add to the list of details for this product
-                details[tableHeader] = tableDetails
+                details[tableHeader] = tableDetails # add to the list of details for this product
             elif tableHeader == 'Memory (RAM)':
                 details['Memory'] = tr.td.text
             elif tableHeader == 'Battery life':
