@@ -98,27 +98,3 @@ def getProducts(linkLaptop):
     # print len(details)sq
 
 #  Using JSON instead:
-
-
-
-
-# # Now, generate the sql from the dictionaries
-# connection = sqlite3.connect('specs.db')  # connects to the db in the current directory
-# cursor = connection.cursor()  # create the cursor
-# cursor.execute("DROP TABLE IF EXISTS specs")
-# cursor.execute('''CREATE TABLE specs ( Unique_id text PRIMARY KEY,  SKU int, Product text, Brand text,  Name text, Storage text, Screen_size text, Dimensions text, Touchscreen text, Memory text, GPU text, Wireless text, Battery_life text,  Operating_system text, Resolution text, Processor text,  Colour text, Weight text, Bluetooth text, Website text )''')
-#
-# # print "table created"
-#
-# for details in listOfProducts:
-#     col = tuple(details.keys())
-#     values = tuple(details.values())
-#     placeholder = ', '.join('?'*len(details.keys()))
-#
-#     query = 'INSERT INTO specs {} VALUES ({})'.format(tuple(details.keys()), placeholder)
-#     cursor.execute(query, values)
-#     connection.commit()
-#
-# connection.close()
-#
-# print "done"

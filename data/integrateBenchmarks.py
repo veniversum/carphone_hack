@@ -2,7 +2,7 @@ from benchmarkScraper import converter as cpu
 from beautifulSoup import scrapper as curry
 from fuzzywuzzy import process
 
-# global variables
+# global variables:
 cpus = cpu.getCPU()  # list of dictionary
 gpus = cpu.getGPU()  # list of dictionary
 curryProd = curry.getListOfProducts()  # list of dictionary
@@ -44,23 +44,28 @@ for prod in curryProd:
     if processor:
         selectedModel = process.extractOne(
             processor, choiceCPU)  # , limit=10, )
-        print processor
+        # print processor
         # print selectedModel
 
         if selectedModel[1] > 70:
             for c in cpus:
                 if c['model'] == selectedModel[0]:
                     prod['cpubenchmark'] = c['score']
-                    print "!!" + prod['cpubenchmark']
+                    # print "!!" + prod['cpubenchmark']
                     break
 
     if gpu:
         selectedModel = process.extractOne(gpu, choiceGPU)
-        print gpu
+        # print gpu
 
         if selectedModel[1] > 70:
             for g in gpus:
                 if g['gpu'] == selectedModel[0]:
                     prod['gpubenchmark'] = g['score']
-                    print '!!' + prod['gpubenchmark']
+                    # print '!!' + prod['gpubenchmark']
                     break
+
+
+def getProducts():
+    # print curryProd
+    return curryProd
