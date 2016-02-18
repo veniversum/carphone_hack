@@ -1,0 +1,43 @@
+$fa-font-path: "../bower_components/font-awesome/fonts";
+
+.currys-logo {
+  font-size: 2em;
+}
+
+.currys-top-bar {
+  padding: 1em;
+}
+
+.currys-search {
+  background-color: $primary-color;
+}
+
+.menu.align-center {
+  text-align:center;
+  font-weight: bold;
+  > li {
+    display: inline-block;
+    font-size: 13px;
+    a {color: #333;}
+    &:hover {
+      background-color: $primary-color;
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+.currys-menu {
+  background-color: $light-gray;
+  border-style: solid;
+  border-color: $medium-gray;
+  border-width: 1px 0px 1px 0px;
+ li {
+ }
+}
+
+.button-hollow-dark {
+  @include button(false, #333, #333, #333, hollow);
+  border-width: 0px;
+}

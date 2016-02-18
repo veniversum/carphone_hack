@@ -1,52 +1,38 @@
-var gulp = require("gulp");
-var concat = require("gulp-concat");
-var sass = require('gulp-sass');
+var gulp = require('gulp');
+var $    = require('gulp-load-plugins')();
 var connect = require('gulp-connect');
 
-var bowerSources = [
-    "./bower_components/jquery/dist/jquery.js",
-    "./bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"
+var sassPaths = [
+  'bower_components/foundation-sites/scss',
+  'bower_components/motion-ui/src',
+  'bower_components/font-awesome/scss'
 ];
-
-var jsSources = [
-    // list all the js sources to be used, in order of dependencies
-    './dev/js/main.js'
-];
-
-gulp.task("js", function() {
-    var srcs = bowerSources.concat(jsSources);
-    console.log(srcs);
-    gulp.src(srcs)
-        .pipe(concat("app.js"))
-        .pipe(gulp.dest('./build/js/'))
-        .pipe(connect.reload());
-});
-
-gulp.task("copy", function() {
-    gulp.src('./dev/html/**/*.html')
-        .pipe(gulp.dest('./build'))
-        .pipe(connect.reload());
-});
-
-gulp.task('build', ['js', 'copy', 'sass']);
-
-gulp.task('watch', ['build' ],function() {
-    gulp.watch(jsSources, ['js']);
-    gulp.watch('./dev/html/**/*.html', ['copy']);
-    gulp.watch('./dev/sass/**/*.scss', ['sass']);
-});
 
 gulp.task('sass', function() {
-    return gulp.src('./dev/sass/stylesheet.scss')
-        .pipe(sass.sync().on('error', sass.logError))
-        .pipe(concat('stylesheet.css'))
-        .pipe(gulp.dest('./build/css'))
-        .pipe(connect.reload());
+  return gulp.src('scss/app.scss')
+    .pipe($.sass({
+      includePaths: sassPaths
+    })
+      .on('error', $.sass.logError))
+    .pipe($.autoprefixer({
+      browsers: ['last 2 versions', 'ie >= 9']
+    }))
+    .pipe(gulp.dest('css'))
+      .pipe(connect.reload());
 });
 
-gulp.task('serve', ['watch'], function() {
-    connect.server({
-        root: 'build',
-        livereload: true
-    });
+gulp.task('watch', ['sass'], function() {
+  gulp.watch(['scss/**/*.scss'], ['sass']);
 });
+gulp.task('default', ['sass'], function() {
+  gulp.watch(['scss/**/*.scss'], ['sass']);
+});
+
+gulp.task('connect', function() {
+  connect.server({
+    root: '',
+    livereload: true
+  })
+});
+
+gulp.task('serve', ['watch', 'connect']);
