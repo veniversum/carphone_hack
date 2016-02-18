@@ -174,7 +174,7 @@
         {
             "name": "AMD A10-7300 APU",
             "price": "NA",
-            "score": "3039",
+            "score": "3035",
             "powerPerf": "19",
             "manufacturer": "AMD",
             "series": "NA",
@@ -192,7 +192,7 @@
         {
             "name": "AMD A10-7700K APU",
             "price": "$115.99",
-            "score": "5234",
+            "score": "5231",
             "powerPerf": "95",
             "manufacturer": "AMD",
             "series": "NA",
@@ -201,7 +201,7 @@
         {
             "name": "AMD A10-7800 APU",
             "price": "$104.99",
-            "score": "5189",
+            "score": "5191",
             "powerPerf": "65",
             "manufacturer": "AMD",
             "series": "NA",
@@ -219,7 +219,7 @@
         {
             "name": "AMD A10-7870K",
             "price": "$139.99",
-            "score": "5593",
+            "score": "5595",
             "powerPerf": "95",
             "manufacturer": "AMD",
             "series": "NA",
@@ -408,7 +408,7 @@
         {
             "name": "AMD A4-5000 APU",
             "price": "NA",
-            "score": "1897",
+            "score": "1898",
             "powerPerf": "15",
             "manufacturer": "AMD",
             "series": "NA",
@@ -426,7 +426,7 @@
         {
             "name": "AMD A4-5150M APU",
             "price": "NA",
-            "score": "1811",
+            "score": "1826",
             "powerPerf": "35",
             "manufacturer": "AMD",
             "series": "NA",
@@ -570,7 +570,7 @@
         {
             "name": "AMD A6-3500 APU",
             "price": "$145.15*",
-            "score": "2022",
+            "score": "2020",
             "powerPerf": "65",
             "manufacturer": "AMD",
             "series": "NA",
@@ -615,7 +615,7 @@
         {
             "name": "AMD A6-4400M APU",
             "price": "NA",
-            "score": "1626",
+            "score": "1627",
             "powerPerf": "35",
             "manufacturer": "AMD",
             "series": "NA",
@@ -633,7 +633,7 @@
         {
             "name": "AMD A6-5200 APU",
             "price": "NA",
-            "score": "2407",
+            "score": "2408",
             "powerPerf": "25",
             "manufacturer": "AMD",
             "series": "NA",
@@ -723,7 +723,7 @@
         {
             "name": "AMD A6-6420K APU",
             "price": "$69.35*",
-            "score": "2204",
+            "score": "2220",
             "powerPerf": "65",
             "manufacturer": "AMD",
             "series": "NA",
@@ -750,7 +750,7 @@
         {
             "name": "AMD A6-7400K APU",
             "price": "$63.99",
-            "score": "2842",
+            "score": "2838",
             "powerPerf": "65",
             "manufacturer": "AMD",
             "series": "NA",
@@ -777,7 +777,7 @@
         {
             "name": "AMD A8 PRO-7600B APU",
             "price": "NA",
-            "score": "4970",
+            "score": "5014",
             "powerPerf": "65",
             "manufacturer": "AMD",
             "series": "A8 PRO",
@@ -975,7 +975,7 @@
         {
             "name": "AMD A8-6600K APU",
             "price": "$129.99",
-            "score": "4609",
+            "score": "4605",
             "powerPerf": "100",
             "manufacturer": "AMD",
             "series": "NA",
@@ -1020,7 +1020,7 @@
         {
             "name": "AMD A8-7600 APU",
             "price": "$74.99",
-            "score": "5200",
+            "score": "5201",
             "powerPerf": "65",
             "manufacturer": "AMD",
             "series": "NA",
@@ -1146,7 +1146,7 @@
         {
             "name": "AMD Athlon 2650e",
             "price": "$19.00*",
-            "score": "407",
+            "score": "409",
             "powerPerf": "NA",
             "manufacturer": "AMD",
             "series": "Athlon",
@@ -1281,7 +1281,7 @@
         {
             "name": "AMD Athlon 64 3200+",
             "price": "$149.95*",
-            "score": "492",
+            "score": "491",
             "powerPerf": "62",
             "manufacturer": "AMD",
             "series": "Athlon 64",
@@ -1524,7 +1524,7 @@
         {
             "name": "AMD Athlon 64 X2 Dual Core 4400+",
             "price": "$198.95",
-            "score": "1152",
+            "score": "1153",
             "powerPerf": "65",
             "manufacturer": "AMD",
             "series": "Athlon 64 X2",
@@ -1542,7 +1542,7 @@
         {
             "name": "AMD Athlon 64 X2 Dual Core 4800+",
             "price": "$159.95",
-            "score": "1271",
+            "score": "1270",
             "powerPerf": "65",
             "manufacturer": "AMD",
             "series": "Athlon 64 X2",
@@ -1560,7 +1560,7 @@
         {
             "name": "AMD Athlon 64 X2 Dual Core 5200+",
             "price": "$60.00*",
-            "score": "1388",
+            "score": "1387",
             "powerPerf": "65",
             "manufacturer": "AMD",
             "series": "Athlon 64 X2",
@@ -1596,7 +1596,7 @@
         {
             "name": "AMD Athlon 64 X2 Dual Core 6000+",
             "price": "$59.45",
-            "score": "1610",
+            "score": "1611",
             "powerPerf": "89",
             "manufacturer": "AMD",
             "series": "Athlon 64 X2",
@@ -1965,7 +1965,7 @@
         {
             "name": "AMD Athlon II N350 Dual-Core",
             "price": "NA",
-            "score": "1232",
+            "score": "1262",
             "powerPerf": "35",
             "manufacturer": "AMD",
             "series": "Athlon",
@@ -2262,7 +2262,7 @@
         {
             "name": "AMD Athlon II X2 B24",
             "price": "$43.00*",
-            "score": "1840",
+            "score": "1843",
             "powerPerf": "65",
             "manufacturer": "AMD",
             "series": "Athlon II X2",
@@ -3036,7 +3036,7 @@
         {
             "name": "AMD Athlon X4 860K Quad Core",
             "price": "$74.99",
-            "score": "5604",
+            "score": "5605",
             "powerPerf": "95",
             "manufacturer": "AMD",
             "series": "Athlon X4",
@@ -3324,7 +3324,7 @@
         {
             "name": "AMD Athlon64 X2 Dual Core 4600+",
             "price": "NA",
-            "score": "1280",
+            "score": "1108",
             "powerPerf": "110",
             "manufacturer": "AMD",
             "series": "Athlon",
@@ -3405,7 +3405,7 @@
         {
             "name": "AMD E-350 APU",
             "price": "NA",
-            "score": "702",
+            "score": "712",
             "powerPerf": "18",
             "manufacturer": "AMD",
             "series": "NA",
@@ -3459,7 +3459,7 @@
         {
             "name": "AMD E1-2100 APU",
             "price": "NA",
-            "score": "621",
+            "score": "622",
             "powerPerf": "9",
             "manufacturer": "AMD",
             "series": "NA",
@@ -3630,7 +3630,7 @@
         {
             "name": "AMD FX-4300 Quad-Core",
             "price": "$81.00",
-            "score": "4641",
+            "score": "4640",
             "powerPerf": "95",
             "manufacturer": "AMD",
             "series": "NA",
@@ -3783,7 +3783,7 @@
         {
             "name": "AMD FX-8150 Eight-Core",
             "price": "$759.95*",
-            "score": "7621",
+            "score": "7622",
             "powerPerf": "125",
             "manufacturer": "AMD",
             "series": "NA",
@@ -3810,7 +3810,7 @@
         {
             "name": "AMD FX-8320 Eight-Core",
             "price": "$139.99",
-            "score": "8023",
+            "score": "8024",
             "powerPerf": "125",
             "manufacturer": "AMD",
             "series": "NA",
@@ -3819,7 +3819,7 @@
         {
             "name": "AMD FX-8320E Eight-Core",
             "price": "$139.99",
-            "score": "7431",
+            "score": "7433",
             "powerPerf": "95",
             "manufacturer": "AMD",
             "series": "NA",
@@ -3855,7 +3855,7 @@
         {
             "name": "AMD FX-8800P",
             "price": "NA",
-            "score": "4230",
+            "score": "4212",
             "powerPerf": "35",
             "manufacturer": "AMD",
             "series": "NA",
@@ -3873,7 +3873,7 @@
         {
             "name": "AMD FX-9590 Eight-Core",
             "price": "$239.99",
-            "score": "10242",
+            "score": "10240",
             "powerPerf": "220",
             "manufacturer": "AMD",
             "series": "NA",
@@ -4890,7 +4890,7 @@
         {
             "name": "AMD Phenom 8600B Triple-Core",
             "price": "$52.99*",
-            "score": "1926",
+            "score": "1933",
             "powerPerf": "95",
             "manufacturer": "AMD",
             "series": "Phenom",
@@ -5286,7 +5286,7 @@
         {
             "name": "AMD Phenom II X2 550",
             "price": "$99.99*",
-            "score": "2054",
+            "score": "2053",
             "powerPerf": "80",
             "manufacturer": "AMD",
             "series": "Phenom II",
@@ -5547,7 +5547,7 @@
         {
             "name": "AMD Phenom II X4 910e",
             "price": "$156.99*",
-            "score": "3388",
+            "score": "3396",
             "powerPerf": "65",
             "manufacturer": "AMD",
             "series": "Phenom II X4",
@@ -5700,7 +5700,7 @@
         {
             "name": "AMD Phenom II X4 B45",
             "price": "NA",
-            "score": "3551",
+            "score": "3559",
             "powerPerf": "NA",
             "manufacturer": "AMD",
             "series": "Phenom II X4",
@@ -6006,7 +6006,7 @@
         {
             "name": "AMD PRO A12-8800B",
             "price": "NA",
-            "score": "4403",
+            "score": "4436",
             "powerPerf": "15",
             "manufacturer": "AMD",
             "series": "NA",
@@ -6024,7 +6024,7 @@
         {
             "name": "AMD PRO A8-8600B",
             "price": "NA",
-            "score": "4385",
+            "score": "4344",
             "powerPerf": "15",
             "manufacturer": "AMD",
             "series": "NA",
@@ -6663,7 +6663,7 @@
         {
             "name": "AMD Turion 64 X2 Mobile TL-64",
             "price": "$39.39*",
-            "score": "1117",
+            "score": "1114",
             "powerPerf": "35",
             "manufacturer": "AMD",
             "series": "Turion",
@@ -6816,7 +6816,7 @@
         {
             "name": "AMD Turion II P540 Dual-Core",
             "price": "$27.00*",
-            "score": "1474",
+            "score": "1475",
             "powerPerf": "35",
             "manufacturer": "AMD",
             "series": "Turion II",
@@ -7608,7 +7608,7 @@
         {
             "name": "Intel Atom x5-Z8300 @ 1.44GHz",
             "price": "NA",
-            "score": "1205",
+            "score": "1211",
             "powerPerf": "4",
             "manufacturer": "Intel",
             "series": "Atom",
@@ -7626,7 +7626,7 @@
         {
             "name": "Intel Atom x7-Z8700 @ 1.60GHz",
             "price": "NA",
-            "score": "1954",
+            "score": "1956",
             "powerPerf": "NA",
             "manufacturer": "Intel",
             "series": "Atom",
@@ -8382,7 +8382,7 @@
         {
             "name": "Intel Celeron 847 @ 1.10GHz",
             "price": "$390.00",
-            "score": "956",
+            "score": "954",
             "powerPerf": "17",
             "manufacturer": "Intel",
             "series": "Celeron",
@@ -8490,7 +8490,7 @@
         {
             "name": "Intel Celeron B810 @ 1.60GHz",
             "price": "NA",
-            "score": "1350",
+            "score": "1375",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Celeron",
@@ -8652,7 +8652,7 @@
         {
             "name": "Intel Celeron E3400 @ 2.60GHz",
             "price": "$182.70",
-            "score": "1450",
+            "score": "1449",
             "powerPerf": "65",
             "manufacturer": "Intel",
             "series": "Celeron",
@@ -8760,7 +8760,7 @@
         {
             "name": "Intel Celeron G1840 @ 2.80GHz",
             "price": "$47.99",
-            "score": "3002",
+            "score": "3003",
             "powerPerf": "53",
             "manufacturer": "Intel",
             "series": "Celeron",
@@ -8904,7 +8904,7 @@
         {
             "name": "Intel Celeron J1800 @ 2.41GHz",
             "price": "NA",
-            "score": "1054",
+            "score": "1044",
             "powerPerf": "10",
             "manufacturer": "Intel",
             "series": "Celeron",
@@ -9201,7 +9201,7 @@
         {
             "name": "Intel Celeron N2840 @ 2.16GHz",
             "price": "NA",
-            "score": "1054",
+            "score": "1053",
             "powerPerf": "7",
             "manufacturer": "Intel",
             "series": "Celeron",
@@ -9228,7 +9228,7 @@
         {
             "name": "Intel Celeron N2930 @ 1.83GHz",
             "price": "NA",
-            "score": "1659",
+            "score": "1658",
             "powerPerf": "7.5",
             "manufacturer": "Intel",
             "series": "Celeron",
@@ -9237,7 +9237,7 @@
         {
             "name": "Intel Celeron N2940 @ 1.83GHz",
             "price": "NA",
-            "score": "1790",
+            "score": "1778",
             "powerPerf": "7.5",
             "manufacturer": "Intel",
             "series": "Celeron",
@@ -9255,7 +9255,7 @@
         {
             "name": "Intel Celeron N3050 @ 1.60GHz",
             "price": "$216.00",
-            "score": "902",
+            "score": "905",
             "powerPerf": "6",
             "manufacturer": "Intel",
             "series": "Celeron",
@@ -9624,7 +9624,7 @@
         {
             "name": "Intel Core i3-2330M @ 2.20GHz",
             "price": "$170.20*",
-            "score": "2525",
+            "score": "2526",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Core",
@@ -9723,7 +9723,7 @@
         {
             "name": "Intel Core i3-3110M @ 2.40GHz",
             "price": "$95.00",
-            "score": "3046",
+            "score": "3047",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Core",
@@ -9732,7 +9732,7 @@
         {
             "name": "Intel Core i3-3120M @ 2.50GHz",
             "price": "$117.99*",
-            "score": "3226",
+            "score": "3224",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Core",
@@ -9867,7 +9867,7 @@
         {
             "name": "Intel Core i3-330M @ 2.13GHz",
             "price": "$20.95",
-            "score": "1807",
+            "score": "1806",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Core",
@@ -9894,7 +9894,7 @@
         {
             "name": "Intel Core i3-370M @ 2.40GHz",
             "price": "$53.99*",
-            "score": "2041",
+            "score": "2040",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Core",
@@ -10083,7 +10083,7 @@
         {
             "name": "Intel Core i3-4160 @ 3.60GHz",
             "price": "$119.89",
-            "score": "5019",
+            "score": "5020",
             "powerPerf": "54",
             "manufacturer": "Intel",
             "series": "Core",
@@ -10335,7 +10335,7 @@
         {
             "name": "Intel Core i3-6100U @ 2.30GHz",
             "price": "$374.00",
-            "score": "3498",
+            "score": "3502",
             "powerPerf": "15",
             "manufacturer": "Intel",
             "series": "Core",
@@ -10389,7 +10389,7 @@
         {
             "name": "Intel Core i5-2300 @ 2.80GHz",
             "price": "$184.49",
-            "score": "5294",
+            "score": "5289",
             "powerPerf": "95",
             "manufacturer": "Intel",
             "series": "Core",
@@ -10398,7 +10398,7 @@
         {
             "name": "Intel Core i5-2310 @ 2.90GHz",
             "price": "$169.99*",
-            "score": "5459",
+            "score": "5460",
             "powerPerf": "95",
             "manufacturer": "Intel",
             "series": "Core",
@@ -10407,7 +10407,7 @@
         {
             "name": "Intel Core i5-2320 @ 3.00GHz",
             "price": "$295.45",
-            "score": "5691",
+            "score": "5692",
             "powerPerf": "95",
             "manufacturer": "Intel",
             "series": "Core",
@@ -10587,7 +10587,7 @@
         {
             "name": "Intel Core i5-2520M @ 2.50GHz",
             "price": "$137.99*",
-            "score": "3554",
+            "score": "3555",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Core",
@@ -10605,7 +10605,7 @@
         {
             "name": "Intel Core i5-2540M @ 2.60GHz",
             "price": "$109.95",
-            "score": "3738",
+            "score": "3739",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Core",
@@ -10641,7 +10641,7 @@
         {
             "name": "Intel Core i5-3210M @ 2.50GHz",
             "price": "$150.99*",
-            "score": "3786",
+            "score": "3787",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Core",
@@ -10668,7 +10668,7 @@
         {
             "name": "Intel Core i5-3320M @ 2.60GHz",
             "price": "$239.99*",
-            "score": "3997",
+            "score": "3998",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Core",
@@ -10812,7 +10812,7 @@
         {
             "name": "Intel Core i5-3450S @ 2.80GHz",
             "price": "$206.51*",
-            "score": "5988",
+            "score": "5994",
             "powerPerf": "65",
             "manufacturer": "Intel",
             "series": "Core",
@@ -10974,7 +10974,7 @@
         {
             "name": "Intel Core i5-4210M @ 2.60GHz",
             "price": "$212.93*",
-            "score": "4218",
+            "score": "4219",
             "powerPerf": "37",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11181,7 +11181,7 @@
         {
             "name": "Intel Core i5-4430 @ 3.00GHz",
             "price": "$184.99",
-            "score": "6256",
+            "score": "6257",
             "powerPerf": "84",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11199,7 +11199,7 @@
         {
             "name": "Intel Core i5-4440 @ 3.10GHz",
             "price": "$189.99",
-            "score": "6412",
+            "score": "6413",
             "powerPerf": "84",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11226,7 +11226,7 @@
         {
             "name": "Intel Core i5-4460S @ 2.90GHz",
             "price": "NA",
-            "score": "6361",
+            "score": "6360",
             "powerPerf": "65",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11253,7 +11253,7 @@
         {
             "name": "Intel Core i5-4570 @ 3.20GHz",
             "price": "$199.99",
-            "score": "7019",
+            "score": "7017",
             "powerPerf": "84",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11289,7 +11289,7 @@
         {
             "name": "Intel Core i5-4570TE @ 2.70GHz",
             "price": "NA",
-            "score": "3603",
+            "score": "3672",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11334,7 +11334,7 @@
         {
             "name": "Intel Core i5-4670 @ 3.40GHz",
             "price": "$222.99",
-            "score": "7376",
+            "score": "7373",
             "powerPerf": "84",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11379,7 +11379,7 @@
         {
             "name": "Intel Core i5-4690 @ 3.50GHz",
             "price": "$223.99",
-            "score": "7614",
+            "score": "7615",
             "powerPerf": "84",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11388,7 +11388,7 @@
         {
             "name": "Intel Core i5-4690K @ 3.50GHz",
             "price": "$239.99",
-            "score": "7716",
+            "score": "7717",
             "powerPerf": "88",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11406,7 +11406,7 @@
         {
             "name": "Intel Core i5-4690T @ 2.50GHz",
             "price": "NA",
-            "score": "6700",
+            "score": "6714",
             "powerPerf": "45",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11424,7 +11424,7 @@
         {
             "name": "Intel Core i5-480M @ 2.67GHz",
             "price": "NA",
-            "score": "2447",
+            "score": "2446",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11442,7 +11442,7 @@
         {
             "name": "Intel Core i5-5200U @ 2.20GHz",
             "price": "NA",
-            "score": "3522",
+            "score": "3521",
             "powerPerf": "15",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11451,7 +11451,7 @@
         {
             "name": "Intel Core i5-520M @ 2.40GHz",
             "price": "$65.00",
-            "score": "2401",
+            "score": "2400",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11541,7 +11541,7 @@
         {
             "name": "Intel Core i5-560M @ 2.67GHz",
             "price": "$249.99*",
-            "score": "2639",
+            "score": "2640",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11558,7 +11558,7 @@
         },
         {
             "name": "Intel Core i5-5675C @ 3.10GHz",
-            "price": "$289.99",
+            "price": "$299.10",
             "score": "8031",
             "powerPerf": "65",
             "manufacturer": "Intel",
@@ -11586,7 +11586,7 @@
         {
             "name": "Intel Core i5-6260U @ 1.80GHz",
             "price": "$470.93",
-            "score": "4341",
+            "score": "4346",
             "powerPerf": "15",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11595,7 +11595,7 @@
         {
             "name": "Intel Core i5-6300HQ @ 2.30GHz",
             "price": "NA",
-            "score": "5821",
+            "score": "5822",
             "powerPerf": "45",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11604,7 +11604,7 @@
         {
             "name": "Intel Core i5-6300U @ 2.40GHz",
             "price": "NA",
-            "score": "4270",
+            "score": "4271",
             "powerPerf": "15",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11613,7 +11613,7 @@
         {
             "name": "Intel Core i5-6400 @ 2.70GHz",
             "price": "$179.99",
-            "score": "6512",
+            "score": "6507",
             "powerPerf": "65",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11649,7 +11649,7 @@
         {
             "name": "Intel Core i5-6500 @ 3.20GHz",
             "price": "$204.99",
-            "score": "7065",
+            "score": "7062",
             "powerPerf": "65",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11658,7 +11658,7 @@
         {
             "name": "Intel Core i5-6500T @ 2.50GHz",
             "price": "NA",
-            "score": "5568",
+            "score": "5674",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11703,7 +11703,7 @@
         {
             "name": "Intel Core i5-6600K @ 3.50GHz",
             "price": "$253.99",
-            "score": "7786",
+            "score": "7790",
             "powerPerf": "91",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11757,7 +11757,7 @@
         {
             "name": "Intel Core i5-760 @ 2.80GHz",
             "price": "$154.03",
-            "score": "3929",
+            "score": "3926",
             "powerPerf": "95",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11856,7 +11856,7 @@
         {
             "name": "Intel Core i7-2640M @ 2.80GHz",
             "price": "$209.13",
-            "score": "3918",
+            "score": "3919",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Core",
@@ -11937,7 +11937,7 @@
         {
             "name": "Intel Core i7-2760QM @ 2.40GHz",
             "price": "$378.00*",
-            "score": "6650",
+            "score": "6649",
             "powerPerf": "45",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12009,7 +12009,7 @@
         {
             "name": "Intel Core i7-3520M @ 2.90GHz",
             "price": "NA",
-            "score": "4532",
+            "score": "4531",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12027,7 +12027,7 @@
         {
             "name": "Intel Core i7-3540M @ 3.00GHz",
             "price": "$259.99*",
-            "score": "4647",
+            "score": "4649",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12054,7 +12054,7 @@
         {
             "name": "Intel Core i7-3610QM @ 2.30GHz",
             "price": "$399.99*",
-            "score": "7468",
+            "score": "7467",
             "powerPerf": "45",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12081,7 +12081,7 @@
         {
             "name": "Intel Core i7-3615QE @ 2.30GHz",
             "price": "NA",
-            "score": "5495",
+            "score": "6395",
             "powerPerf": "45",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12207,7 +12207,7 @@
         {
             "name": "Intel Core i7-3820 @ 3.60GHz",
             "price": "$672.59",
-            "score": "8998",
+            "score": "8999",
             "powerPerf": "130",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12261,7 +12261,7 @@
         {
             "name": "Intel Core i7-3960X @ 3.30GHz",
             "price": "$1,011.79",
-            "score": "12732",
+            "score": "12740",
             "powerPerf": "130",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12279,7 +12279,7 @@
         {
             "name": "Intel Core i7-4500U @ 1.80GHz",
             "price": "NA",
-            "score": "3801",
+            "score": "3802",
             "powerPerf": "15",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12405,7 +12405,7 @@
         {
             "name": "Intel Core i7-4702MQ @ 2.20GHz",
             "price": "NA",
-            "score": "7173",
+            "score": "7174",
             "powerPerf": "37",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12414,7 +12414,7 @@
         {
             "name": "Intel Core i7-4710HQ @ 2.50GHz",
             "price": "NA",
-            "score": "7885",
+            "score": "7884",
             "powerPerf": "47",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12495,7 +12495,7 @@
         {
             "name": "Intel Core i7-4770 @ 3.40GHz",
             "price": "$306.99",
-            "score": "9833",
+            "score": "9832",
             "powerPerf": "84",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12576,7 +12576,7 @@
         {
             "name": "Intel Core i7-4790 @ 3.60GHz",
             "price": "$306.89",
-            "score": "10019",
+            "score": "10018",
             "powerPerf": "84",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12585,7 +12585,7 @@
         {
             "name": "Intel Core i7-4790K @ 4.00GHz",
             "price": "$339.99",
-            "score": "11215",
+            "score": "11216",
             "powerPerf": "88",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12612,7 +12612,7 @@
         {
             "name": "Intel Core i7-4800MQ @ 2.70GHz",
             "price": "$509.95",
-            "score": "8539",
+            "score": "8540",
             "powerPerf": "47",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12621,7 +12621,7 @@
         {
             "name": "Intel Core i7-4810MQ @ 2.80GHz",
             "price": "$432.40",
-            "score": "8797",
+            "score": "8798",
             "powerPerf": "47",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12684,7 +12684,7 @@
         {
             "name": "Intel Core i7-4910MQ @ 2.90GHz",
             "price": "$784.02*",
-            "score": "9546",
+            "score": "9549",
             "powerPerf": "47",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12747,7 +12747,7 @@
         {
             "name": "Intel Core i7-5500U @ 2.40GHz",
             "price": "NA",
-            "score": "4023",
+            "score": "4021",
             "powerPerf": "15",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12837,7 +12837,7 @@
         {
             "name": "Intel Core i7-5930K @ 3.50GHz",
             "price": "$579.99",
-            "score": "13637",
+            "score": "13638",
             "powerPerf": "140",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12918,7 +12918,7 @@
         {
             "name": "Intel Core i7-640M @ 2.80GHz",
             "price": "$159.52",
-            "score": "2889",
+            "score": "2886",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12936,7 +12936,7 @@
         {
             "name": "Intel Core i7-6500U @ 2.50GHz",
             "price": "NA",
-            "score": "4348",
+            "score": "4347",
             "powerPerf": "15",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12972,7 +12972,7 @@
         {
             "name": "Intel Core i7-6700 @ 3.40GHz",
             "price": "$359.99",
-            "score": "9954",
+            "score": "9956",
             "powerPerf": "65",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12981,7 +12981,7 @@
         {
             "name": "Intel Core i7-6700HQ @ 2.60GHz",
             "price": "NA",
-            "score": "8008",
+            "score": "8018",
             "powerPerf": "45",
             "manufacturer": "Intel",
             "series": "Core",
@@ -12990,7 +12990,7 @@
         {
             "name": "Intel Core i7-6700K @ 4.00GHz",
             "price": "$379.99",
-            "score": "11017",
+            "score": "11019",
             "powerPerf": "95",
             "manufacturer": "Intel",
             "series": "Core",
@@ -13026,7 +13026,7 @@
         {
             "name": "Intel Core i7-6820HQ @ 2.70GHz",
             "price": "NA",
-            "score": "8368",
+            "score": "8394",
             "powerPerf": "45",
             "manufacturer": "Intel",
             "series": "Core",
@@ -13062,7 +13062,7 @@
         {
             "name": "Intel Core i7-820QM @ 1.73GHz",
             "price": "$135.00*",
-            "score": "3250",
+            "score": "3251",
             "powerPerf": "45",
             "manufacturer": "Intel",
             "series": "Core",
@@ -13179,7 +13179,7 @@
         {
             "name": "Intel Core i7-950 @ 3.07GHz",
             "price": "$408.95",
-            "score": "5646",
+            "score": "5644",
             "powerPerf": "130",
             "manufacturer": "Intel",
             "series": "Core",
@@ -13323,7 +13323,7 @@
         {
             "name": "Intel Core m5-6Y54 @ 1.10GHz",
             "price": "NA",
-            "score": "3185",
+            "score": "3230",
             "powerPerf": "7",
             "manufacturer": "Intel",
             "series": "Core",
@@ -13404,7 +13404,7 @@
         {
             "name": "Intel Core2 Duo E4300 @ 1.80GHz",
             "price": "$39.99*",
-            "score": "1054",
+            "score": "1055",
             "powerPerf": "65",
             "manufacturer": "Intel",
             "series": "Core2 Duo",
@@ -13422,7 +13422,7 @@
         {
             "name": "Intel Core2 Duo E4500 @ 2.20GHz",
             "price": "$34.99*",
-            "score": "1275",
+            "score": "1276",
             "powerPerf": "65",
             "manufacturer": "Intel",
             "series": "Core2 Duo",
@@ -13467,7 +13467,7 @@
         {
             "name": "Intel Core2 Duo E6400 @ 2.13GHz",
             "price": "$56.99*",
-            "score": "1298",
+            "score": "1299",
             "powerPerf": "65",
             "manufacturer": "Intel",
             "series": "Core2 Duo",
@@ -13602,7 +13602,7 @@
         {
             "name": "Intel Core2 Duo E8200 @ 2.66GHz",
             "price": "NA",
-            "score": "1887",
+            "score": "1888",
             "powerPerf": "65",
             "manufacturer": "Intel",
             "series": "Core2 Duo",
@@ -13845,7 +13845,7 @@
         {
             "name": "Intel Core2 Duo P8400 @ 2.26GHz",
             "price": "$197.79*",
-            "score": "1473",
+            "score": "1472",
             "powerPerf": "25",
             "manufacturer": "Intel",
             "series": "Core2 Duo",
@@ -14169,7 +14169,7 @@
         {
             "name": "Intel Core2 Duo T7300 @ 2.00GHz",
             "price": "$30.99*",
-            "score": "1201",
+            "score": "1202",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Core2 Duo",
@@ -14196,7 +14196,7 @@
         {
             "name": "Intel Core2 Duo T7600 @ 2.33GHz",
             "price": "NA",
-            "score": "1327",
+            "score": "1328",
             "powerPerf": "34",
             "manufacturer": "Intel",
             "series": "Core2 Duo",
@@ -14241,7 +14241,7 @@
         {
             "name": "Intel Core2 Duo T9300 @ 2.50GHz",
             "price": "$57.99*",
-            "score": "1685",
+            "score": "1686",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Core2 Duo",
@@ -14547,7 +14547,7 @@
         {
             "name": "Intel Core2 Quad Q9300 @ 2.50GHz",
             "price": "$104.00",
-            "score": "3196",
+            "score": "3195",
             "powerPerf": "95",
             "manufacturer": "Intel",
             "series": "Core2 Quad",
@@ -14556,7 +14556,7 @@
         {
             "name": "Intel Core2 Quad Q9400 @ 2.66GHz",
             "price": "$149.95*",
-            "score": "3432",
+            "score": "3433",
             "powerPerf": "95",
             "manufacturer": "Intel",
             "series": "Core2 Quad",
@@ -14601,7 +14601,7 @@
         {
             "name": "Intel Core2 Quad Q9650 @ 3.00GHz",
             "price": "$279.95",
-            "score": "4278",
+            "score": "4276",
             "powerPerf": "95",
             "manufacturer": "Intel",
             "series": "Core2 Quad",
@@ -14691,7 +14691,7 @@
         {
             "name": "Intel Pentium 2117U @ 1.80GHz",
             "price": "$134.00*",
-            "score": "1659",
+            "score": "1655",
             "powerPerf": "17",
             "manufacturer": "Intel",
             "series": "Pentium",
@@ -15357,7 +15357,7 @@
         {
             "name": "Intel Pentium E2220 @ 2.40GHz",
             "price": "$47.64",
-            "score": "1344",
+            "score": "1343",
             "powerPerf": "65",
             "manufacturer": "Intel",
             "series": "Pentium",
@@ -15366,7 +15366,7 @@
         {
             "name": "Intel Pentium E5200 @ 2.50GHz",
             "price": "$60.00",
-            "score": "1497",
+            "score": "1498",
             "powerPerf": "65",
             "manufacturer": "Intel",
             "series": "Pentium",
@@ -15447,7 +15447,7 @@
         {
             "name": "Intel Pentium E6700 @ 3.20GHz",
             "price": "$208.95*",
-            "score": "1964",
+            "score": "1965",
             "powerPerf": "65",
             "manufacturer": "Intel",
             "series": "Pentium",
@@ -15591,7 +15591,7 @@
         {
             "name": "Intel Pentium G3250 @ 3.20GHz",
             "price": "$70.00",
-            "score": "3331",
+            "score": "3332",
             "powerPerf": "53",
             "manufacturer": "Intel",
             "series": "Pentium",
@@ -15717,7 +15717,7 @@
         {
             "name": "Intel Pentium G3470 @ 3.60GHz",
             "price": "$89.99",
-            "score": "3695",
+            "score": "3722",
             "powerPerf": "53",
             "manufacturer": "Intel",
             "series": "Pentium",
@@ -15726,7 +15726,7 @@
         {
             "name": "Intel Pentium G4400 @ 3.30GHz",
             "price": "$64.99",
-            "score": "3704",
+            "score": "3691",
             "powerPerf": "54",
             "manufacturer": "Intel",
             "series": "Pentium",
@@ -16311,7 +16311,7 @@
         {
             "name": "Intel Pentium N3540 @ 2.16GHz",
             "price": "$239.99*",
-            "score": "1965",
+            "score": "1966",
             "powerPerf": "7.5",
             "manufacturer": "Intel",
             "series": "Pentium",
@@ -16320,7 +16320,7 @@
         {
             "name": "Intel Pentium N3700 @ 1.60GHz",
             "price": "$229.99",
-            "score": "1895",
+            "score": "1900",
             "powerPerf": "6",
             "manufacturer": "Intel",
             "series": "Pentium",
@@ -16500,7 +16500,7 @@
         {
             "name": "Intel Pentium T4400 @ 2.20GHz",
             "price": "NA",
-            "score": "1295",
+            "score": "1294",
             "powerPerf": "35",
             "manufacturer": "Intel",
             "series": "Pentium",
@@ -16995,7 +16995,7 @@
         {
             "name": "Intel Xeon E3-1231 v3 @ 3.40GHz",
             "price": "$251.73",
-            "score": "9621",
+            "score": "9622",
             "powerPerf": "80",
             "manufacturer": "Intel",
             "series": "Xeon",
@@ -17013,7 +17013,7 @@
         {
             "name": "Intel Xeon E3-1240 @ 3.30GHz",
             "price": "$294.99",
-            "score": "7968",
+            "score": "7974",
             "powerPerf": "80",
             "manufacturer": "Intel",
             "series": "Xeon",
@@ -17391,7 +17391,7 @@
         {
             "name": "Intel Xeon E5-1603 v3 @ 2.80GHz",
             "price": "NA",
-            "score": "5833",
+            "score": "5856",
             "powerPerf": "140",
             "manufacturer": "Intel",
             "series": "Xeon",
@@ -17463,7 +17463,7 @@
         {
             "name": "Intel Xeon E5-1650 @ 3.20GHz",
             "price": "$624.99*",
-            "score": "11779",
+            "score": "11780",
             "powerPerf": "130",
             "manufacturer": "Intel",
             "series": "Xeon",
@@ -17967,7 +17967,7 @@
         {
             "name": "Intel Xeon E5-2667 v3 @ 3.20GHz",
             "price": "$2,325.75",
-            "score": "16274",
+            "score": "16107",
             "powerPerf": "135",
             "manufacturer": "Intel",
             "series": "Xeon",
@@ -18732,7 +18732,7 @@
         {
             "name": "Intel Xeon W3670 @ 3.20GHz",
             "price": "$597.99*",
-            "score": "8468",
+            "score": "8475",
             "powerPerf": "130",
             "manufacturer": "Intel",
             "series": "Xeon",
@@ -18894,7 +18894,7 @@
         {
             "name": "Intel Xeon X3440 @ 2.53GHz",
             "price": "$79.99",
-            "score": "4333",
+            "score": "4339",
             "powerPerf": "95",
             "manufacturer": "Intel",
             "series": "Xeon",
@@ -19155,7 +19155,7 @@
         {
             "name": "Intel Xeon X5687 @ 3.60GHz",
             "price": "$231.30*",
-            "score": "7217",
+            "score": "7228",
             "powerPerf": "130",
             "manufacturer": "Intel",
             "series": "Xeon",
