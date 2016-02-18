@@ -7,7 +7,7 @@ with open('./benchmarkScraper/CPUs.json', 'r') as file:
     listOfCPU = cpu_data.values()[0]
     # listOfData[0] # first cpu_data!!!
 
-with open('./data/gpu_scores.csv', 'r') as file:
+with open('./gpu_scores.csv', 'r') as file:
     listOfGPU = list(csv.DictReader(file, delimiter='|'))  # coerce into a list
 
 

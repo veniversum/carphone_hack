@@ -1,5 +1,5 @@
-import benchmarkScraper.converter as cpu
-import beautifulSoup.scrapper as curry
+from benchmarkScraper import converter as cpu
+from beautifulSoup import scrapper as curry
 from fuzzywuzzy import process
 
 # global variables
@@ -42,7 +42,8 @@ for prod in curryProd:
 
     # top 10 of the match
     if processor:
-        selectedModel = process.extractOne(processor, choiceCPU)  # , limit=10, )
+        selectedModel = process.extractOne(
+            processor, choiceCPU)  # , limit=10, )
         print processor
         # print selectedModel
 
