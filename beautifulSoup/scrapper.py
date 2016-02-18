@@ -88,6 +88,7 @@ def getProducts(linkLaptop):
         # add details for this product to the master list
         listOfProducts.append(details)
 
+    print 'done'
     return listOfProducts;
 
 # get all the links for PC LAPTOP CATEGORY

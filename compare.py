@@ -1,20 +1,23 @@
 import benchmarkScraper.converter as cpu
 import beautifulSoup.scrapper as curry
-import os
-from bs4 import BeautifulSoup
-import urllib2
-import re
+from fuzzywuzzy import process
 
 # global variables
-cpus =  cpu.getCPU() # list of dictionary
-curryProd = curry.getListOfProducts() # list of dictionary
-gpulink = 'http://www.videocardbenchmark.net/gpu_list.php'
-cpulink = 'https://www.cpubenchmark.net/cpu_list.php'
+cpus = cpu.getCPU()  # list of dictionary
+gpus = cpu.getGPU()  # list of dictionary
+curryProd = curry.getListOfProducts()  # list of dictionary
+# gpulink = 'http://www.videocardbenchmark.net/gpu_list.php'
+# cpulink = 'https://www.cpubenchmark.net/cpu_list.php'
 
-# print curryProd
-# print cpus
+# getting all the models as choiceCPU
+choiceCPU = []
+choiceGPU = []
+for c in cpus:
+    choiceCPU.append(c['model'])
+for g in gpus:
+    choiceGPU.append(g['gpu'])
 
-matching = {}
+# itereating through all the prod and attach the benchmark score
 for prod in curryProd:
     # gpu
     try:
@@ -23,21 +26,40 @@ for prod in curryProd:
         gpu = 0
     else:
         gpu = prod['GPU']
-    # Processor
     try:
         prod['Processor']
+        # Processor
     except StandardError:
         processor = 0
     else:
-        processor = prod['Processor'].encode('utf-8','replace').split('\n')[0][2:]
+        processor = prod['Processor'].encode(
+            'ascii', 'ignore').split('\n')[0][2:]
+        processor = processor.replace('Processor', '')
+        processor = processor.replace('Intel', '')
+        processor = processor.replace('-', ' ')
+        processor = processor.replace('Core', '')
+        # print processor
 
-    # iterating through the cpus to find the benchmark for the cpu in query
-    # then add benchmark into prod
-    match = False
-    while not match:
-        for cpu in cpus:
+    # top 10 of the match
+    if processor:
+        selectedModel = process.extractOne(processor, choiceCPU)  # , limit=10, )
+        print processor
+        # print selectedModel
 
-            if re.match(processor, cpu['model']):
-                print 'YES!'
-    # print gpu
-    # print processor
+        if selectedModel[1] > 70:
+            for c in cpus:
+                if c['model'] == selectedModel[0]:
+                    prod['cpubenchmark'] = c['score']
+                    print "!!" + prod['cpubenchmark']
+                    break
+
+    if gpu:
+        selectedModel = process.extractOne(gpu, choiceGPU)
+        print gpu
+
+        if selectedModel[1] > 70:
+            for g in gpus:
+                if g['gpu'] == selectedModel[0]:
+                    prod['gpubenchmark'] = g['score']
+                    print '!!' + prod['gpubenchmark']
+                    break
