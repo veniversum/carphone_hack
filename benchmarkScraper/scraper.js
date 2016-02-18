@@ -134,7 +134,7 @@ function scrapeData(html, successCallback, errorCallback) {
         }
     });
     return cpusRaw;
-};
+}
 
 
 (function() {
@@ -142,7 +142,7 @@ function scrapeData(html, successCallback, errorCallback) {
 
     request(url, function(error, response, html) {
         // console.log(html);
-        console.log("Response:")
+        console.log("Response:");
         console.log(response.statusCode);
 
         if (error) {
@@ -159,8 +159,11 @@ function scrapeData(html, successCallback, errorCallback) {
                 sliced = discard(sliced, manufacturers);
                 cpu.series = extract(sliced, brandNames);
                 sliced = discard(sliced, brandNames);
-                sliced = sliced.replace(/^(-[ ]?M )+/i, 'M ');
-                sliced = sliced.replace(/^(-[ ]?S )+/i, 'S ');
+                //sliced = sliced.replace(/^(-[ ]?M )+/i, 'M ');
+                //sliced = sliced.replace(/^(-[ ]?S )+/i, 'S ');
+
+                sliced = sliced.replace(/-/g, ' '); //replace dashes with spaces
+                sliced = sliced.trim(); // then trim excessive whitespace
                 console.log(sliced);
                 cpu.model = sliced;
             });

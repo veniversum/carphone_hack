@@ -1,21 +1,17 @@
 {
-  "name": "carphone_hack",
-  "description": "Carphone Hack",
-  "main": "",
+  "name": "foundation-sites-template",
+  "version": "1.0.0",
   "authors": [
-    "ILW Chicken Curry team: Jakub Kowalczyk"
+    "ZURB <foundation@zurb.com>"
   ],
-  "license": "LGPL-3.0",
-  "keywords": [
-    "smart",
-    "easy",
-    "search",
-    "products",
-    "laptops"
-  ],
-  "homepage": "https://github.com/veniversum/carphone_hack",
-  "moduleType": [],
-  "private": true,
+  "description": "Basic template for a new Foundation for Sites project.",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://foundation.zurb.com",
+  "dependencies": {
+    "foundation-sites": "~6.1.0",
+    "motion-ui": "~1.1.0"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
@@ -23,8 +19,5 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "jquery": "~2.2.0",
-    "bootstrap-sass": "bootstrap-sass-official#~3.3.6"
-  }
+  "private": true
 }
