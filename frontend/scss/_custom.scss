@@ -41,3 +41,117 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
   @include button(false, #333, #333, #333, hollow);
   border-width: 0px;
 }
+
+.vertical-center {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.slider-container {
+  display: flex;
+  align-self: center;
+  align-content: center;
+}
+
+@media (min-width: 640px) {
+.user-buttons-responsive {
+  float:right !important;
+
+}
+
+}
+
+@media (max-width: 640px) {
+  .currys-logo {
+    text-align: center;
+  }
+  .user-buttons-responsive {
+    text-align: center;
+  }
+}
+
+.container {
+  margin-bottom: 5em;
+}
+
+[id^="page"] {
+  position: relative;
+}
+
+
+.background-image:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  height: 300px;
+  width: auto;
+  background-clip: border-box;
+
+/*  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);*/
+}
+
+.background-image {
+  display: block;
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  background-clip: border-box;
+  opacity: 0.8;
+  z-index:-1;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.witcher {
+  background-image: url('../img/the-witcher-3-1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.candy-crush {
+  background-image: url('../img/candy-crush.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.fifa {
+  background-image: url('../img/fifa.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.fieldset legend {background: transparent !important;}
+
+#choose-game-tier {
+  .game-label {
+    padding-left: 1em;
+    background-color: rgba(0,0,0,0.6);
+    label {
+      margin-top: 1em;
+    color: white !important;
+    }
+    input {
+      margin-top: 1em;
+    }
+  }
+  > .row { padding: 0em 1em;
+    > div {
+      padding: 0em;
+      .game-info-container {
+        margin: 0em 1em;
+
+        p {
+          padding: 1em;
+          background-color: rgba(0,0,0,0.6);
+          color: white;
+        }
+      }
+    }
+  }
+}
