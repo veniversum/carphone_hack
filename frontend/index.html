@@ -58,15 +58,22 @@
         <p>Welcome to our smart assistant that will guide you through the process of
             choosing the right desktop or laptop! Please answer a couple of questions and we will
             tailor some suggestions for you.</p>
+        <div class="callout alert" style="display:none" id="error" data-closable>
+            <span id="error-message">Dummy callout</span>
+            <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <form id="master-form" action="results" method="post">
         <div id="page1">
 
             <h4>What is the purpose of this computer?</h4>
             <fieldset id="main-purpose" class="fieldset">
                 <legend>Check the boxes if you think you will use the computer for:</legend>
-                <input id="gaming" type="checkbox"><label for="gaming">Gaming</label>
-                <input id="media" type="checkbox"><label for="media">Media</label>
-                <input id="business" type="checkbox"><label for="business">Business</label>
-                <input id="home-use" type="checkbox"><label for="home-use">Home use</label>
+                <input id="gaming" name="gaming" type="checkbox"><label for="gaming">Gaming</label>
+                <input id="media" name="media"type="checkbox"><label for="media">Media</label>
+                <input id="business" name="business" type="checkbox"><label for="business">Business</label>
+                <input id="home-use" name="homeUse" type="checkbox"><label for="home-use">Home use</label>
 
             </fieldset>
 
@@ -145,26 +152,26 @@
             <fieldset class="fieldset" id="choose-media-types" style=" display: none;">
                 <legend>What kind of media? Tick all that apply:</legend>
 
-                <div class="medium-12 large-expand columns"><input id="audio-playback" value="audio" type="checkbox"><label
+                <div class="medium-12 large-expand columns"><input id="audio-playback" name="audio" type="checkbox"><label
                         for="audio-playback">
                 <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1
                       title="High Definition">HD</span>
                     audio playback
                 </label></div>
 
-                <div class="medium-12 large-expand columns"><input id="watching-videos" value="videos" type="checkbox"><label
+                <div class="medium-12 large-expand columns"><input id="watching-videos" name="videos" type="checkbox"><label
                         for="watching-videos">Watching
                 <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1
                       title="High Definition">HD</span>
                     videos</label></div>
-                <div class="medium-12 large-expand columns"><input id="image-editing" value="imageEditing" type="checkbox"><label
+                <div class="medium-12 large-expand columns"><input id="image-editing" name="imageEditing" type="checkbox"><label
                         for="image-editing">Editing images/Graphic design</label></div>
 
-                <div class="medium-12 large-expand columns"><input id="video-editing" value="videoEditing" type="checkbox"><label
+                <div class="medium-12 large-expand columns"><input id="video-editing" name="videoEditing" type="checkbox"><label
                         for="video-editing">Editing
                     videos</label>
                 </div>
-                <div class="medium-12 large-expand columns"><input id="audio-editing" value="audioEditing" type="checkbox"><label
+                <div class="medium-12 large-expand columns"><input id="audio-editing" name="audioEditing" type="checkbox"><label
                         for="audio-editing">Editing
                     audio/Music production</label></div>
             </fieldset>
@@ -181,7 +188,6 @@
             </div>
         </div>
 
-
         <div id="page2" style=" display: none;">
             <h4>Portability</h4>
             <fieldset class="fieldset">
@@ -191,7 +197,7 @@
                         <div class="slider" id="portability-slider" data-slider data-initial-start="0" data-end="10">
                             <span class="slider-handle" data-slider-handle role="slider" ></span>
                             <span class="slider-fill" data-slider-fill></span>
-                            <input  type="hidden">
+                            <input name="portability" type="hidden">
                         </div>
                     </div>
                     <div class="small-12 columns">
@@ -206,28 +212,7 @@
             <h4>Storage</h4>
             <fieldset class="fieldset">
                 <legend>How much storage do you need?</legend>
-                <p>There are things to consider when picking the type of your drive. There are three main types
-                    of internal storage:
-                <ul>
-                    <li>HDD - Hard Disk Drives. These are the ones that you can find in most laptops and PCs.
-                        They contain a rotating disk covered in magnetic material and a
-                        moving arm that reads data off the disks. Because of all the mechanical parts they tend to
-                        be slow. However, they offer the most storage capacity.
-                    </li>
-                    <li>
-                        SSD - Solid State Drives. As the name suggests, they contain no moving parts and therefore
-                        are much faster than HDDs, allowing your computer to start up and load things from memory much faster,
-                        which means less waiting! Also, they do not drain battery as much as HDDs. However, the technology is quite new and so the drives usually have
-                        less capacity than HDDs with the same price.
-                    </li>
-                    <li>
-                        SSHD - Solid State Hybrid Drives. SSHDs contain both a HDD and an SSD so you can get the best
-                        of both worlds. All the files that the computer has to access frequently are on the SSD, while
-                        the bulk storage is on the HDD. Nice!
-                    </li>
-                </ul>
-                </p>
-                <p>Please select the amount of storage that you need. Below is a rough guide of
+                <p>First, please select the amount of storage that you need. Below is a rough guide of
                     how much data you can store with a given capacity.</p>
                 <table>
                     <thead>
@@ -257,19 +242,40 @@
                     </tr>
                     </tbody>
                 </table>
-                <p>If you are not sure, just leave the c</p>
+                <p>If you are not sure, 1TB should be plenty.</p>
+
                 <label>Choose storage size:
-                    <select id="storage-size">
+                    <select name="storageSize" id="storage-size">
                         <option value="256">Less than 256GB</option>
                         <option value="256-512">256GB - 512GB</option>
-                        <option value="512-1024" selected>512 GB - 1TB</optionvalue>
+                        <option value="512-1024" selected>512 GB - 1TB</option>
                         <option value="1024">More than 1TB</option>
                     </select>
                 </label>
-                <p>Now select storage type based on your needs. If you are not sure which to pick, just go with a HDD!</p>
+                <p>There are three main types of internal storage:
+                <ul>
+                    <li>HDD - Hard Disk Drives. These are the ones that you can find in most laptops and PCs.
+                        They contain a rotating disk covered in magnetic material and a
+                        moving arm that reads data off the disks. Because of all the mechanical parts they tend to
+                        be slow. However, they offer the most storage capacity.
+                    </li>
+                    <li>
+                        SSD - Solid State Drives. As the name suggests, they contain no moving parts and therefore
+                        are much faster than HDDs, allowing your computer to start up and load things from memory much faster,
+                        which means less waiting! Also, they do not drain battery as much as HDDs. However, the technology is quite new and so the drives usually have
+                        less capacity than HDDs with the same price.
+                    </li>
+                    <li>
+                        SSHD - Solid State Hybrid Drives. SSHDs contain both a HDD and an SSD so you can get the best
+                        of both worlds. All the files that the computer has to access frequently are on the SSD, while
+                        the bulk storage is on the HDD. Nice!
+                    </li>
+                </ul>
+                </p>
+                <p>Select storage type based on your needs. If you are not sure which to pick, just go with a HDD!</p>
                 <p>Note that some options might be disabled because of your choice above.</p>
                 <label>Choose a storage type:
-                <select id="storage-type">
+                <select name="storageType" id="storage-type">
                     <option value="SSD">SSD</option>
                     <option value="HDD" selected>HDD</option>
                     <option value="SSHD">SSHD</option>
@@ -294,42 +300,42 @@
 
         <div id="page3" style=" display: none;">
             <h4>Connectivity</h4>
-            <fieldset class="fieldset">
+            <fieldset class="fieldset" id="connectivity">
                 <legend>Would you like to:</legend>
                 <div>
-                    <input id="external-screens" type="checkbox">
+                    <input id="external-screens" value="externalScreens" type="checkbox">
                     <label for="external-screens">Connect your laptop to external screens? (laptops only)</label>
                 </div>
 
                 <div>
-                    <input id="bluetooth" type="checkbox">
+                    <input id="bluetooth" name="bluetooth" type="checkbox">
                     <label for="bluetooth">Connect to wireless headsets or your smartphone? (Bluetooth)</label>
                 </div>
 
                 <div>
-                    <input id="read-dvd" type="checkbox">
+                    <input id="read-dvd" name="dvdRead" type="checkbox">
                     <label for="read-dvd">Be able to read DVD disks?</label>
                 </div>
 
                 <div>
-                    <input id="write-dvd" type="checkbox">
+                    <input id="write-dvd" name="dvdWrite" type="checkbox">
                     <label for="write-dvd">Be able to write DVD disks?</label>
                 </div>
 
                 <div>
-                    <input id="bluray" type="checkbox">
+                    <input id="bluray" name="bluray" type="checkbox">
                     <label for="bluray">Be able to read Blu-ray disks?</label>
                 </div>
 
                 <div>
-                    <input id="sd-card" type="checkbox">
+                    <input id="sd-card" name="sdCard" type="checkbox">
                     <label for="sd-card">Plug your camera's memory card into the laptop?</label>
                 </div>
 
             </fieldset>
 
             <h4>Other</h4>
-            <fieldset class="fieldset">
+            <fieldset class="fieldset" id="extra-options">
                 <legend>Do you care about following?</legend>
                 <div class="row">
                     <div class="small-12 medium-6 columns">
@@ -355,6 +361,7 @@
                 <div class="small-12 large-4"></div>
             </div>
         </div>
+        </form>
     </div>
 </div>
 
