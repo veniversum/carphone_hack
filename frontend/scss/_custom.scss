@@ -143,9 +143,11 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
   > .row { padding: 0em 1em;
     > div {
       padding: 0em;
-      .game-info-container {
-        margin: 0em 1em;
 
+      .game-info-container {
+        //margin: 0em 1em;
+
+        padding: 1em;
         p {
           padding: 1em;
           background-color: rgba(0,0,0,0.6);
@@ -155,3 +157,4 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
     }
   }
 }
+

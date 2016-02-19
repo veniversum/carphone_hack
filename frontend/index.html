@@ -105,7 +105,7 @@
                             <div class="background-image fifa"></div>
                             <div class="game-info-container">
                                 <div class="game-label">
-                                    <input type="radio" name="game-tier" value="high" id="mid-end" required><label
+                                    <input type="radio" name="game-tier" value="mid" id="mid-end" required><label
                                         for="mid-end">Mid-end</label>
                                 </div>
                                 <p class="explanation">
@@ -125,7 +125,7 @@
                             <div class="background-image candy-crush"></div>
                             <div class="game-info-container">
                                 <div class="game-label">
-                                    <input type="radio" name="game-tier" value="high" id="low-end"
+                                    <input type="radio" name="game-tier" value="low" id="low-end"
                                            required><label for="low-end">Low-end</label>
                                 </div>
                                 <p class="explanation">
@@ -145,30 +145,28 @@
             <fieldset class="fieldset" id="choose-media-types" style=" display: none;">
                 <legend>What kind of media? Tick all that apply:</legend>
 
-                <div class="medium-12 large-expand columns"><input id="audio-playback" type="checkbox"><label
+                <div class="medium-12 large-expand columns"><input id="audio-playback" value="audio" type="checkbox"><label
                         for="audio-playback">
                 <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1
                       title="High Definition">HD</span>
                     audio playback
                 </label></div>
 
-                <div class="medium-12 large-expand columns"><input id="watching-videos" type="checkbox"><label
+                <div class="medium-12 large-expand columns"><input id="watching-videos" value="videos" type="checkbox"><label
                         for="watching-videos">Watching
                 <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1
                       title="High Definition">HD</span>
                     videos</label></div>
-                <div class="medium-12 large-expand columns"><input id="photo-editing" type="checkbox"><label
-                        for="photo-editing">Image
-                    editing/Graphic
-                    design</label></div>
+                <div class="medium-12 large-expand columns"><input id="image-editing" value="imageEditing" type="checkbox"><label
+                        for="image-editing">Editing images/Graphic design</label></div>
 
-                <div class="medium-12 large-expand columns"><input id="video-editing" type="checkbox"><label
-                        for="video-editing">Video
-                    editing</label>
+                <div class="medium-12 large-expand columns"><input id="video-editing" value="videoEditing" type="checkbox"><label
+                        for="video-editing">Editing
+                    videos</label>
                 </div>
-                <div class="medium-12 large-expand columns"><input id="audio-editing" type="checkbox"><label
-                        for="audio-editing">Audio
-                    editing/Music production</label></div>
+                <div class="medium-12 large-expand columns"><input id="audio-editing" value="audioEditing" type="checkbox"><label
+                        for="audio-editing">Editing
+                    audio/Music production</label></div>
             </fieldset>
 
 
@@ -190,21 +188,19 @@
                 <legend>How portable should be your computer?</legend>
                 <div class="row">
                     <div class="small-12 columns align-justify">
-                        <div class="slider"  data-slider data-initial-start="3" data-end="3">
-                            <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+                        <div class="slider" id="portability-slider" data-slider data-initial-start="0" data-end="10">
+                            <span class="slider-handle" data-slider-handle role="slider" ></span>
                             <span class="slider-fill" data-slider-fill></span>
-                            <input id="portability-slider" type="hidden">
+                            <input  type="hidden">
                         </div>
                     </div>
                     <div class="small-12 columns">
-                        <p class="">
+                        <p class="" id="portability-message">
                             I will carry it with me a lot of times, I want it to be light
                             and have the best battery life I can get.
                         </p>
                     </div>
                 </div>
-
-
 
             </fieldset>
             <h4>Storage</h4>
@@ -231,6 +227,58 @@
                     </li>
                 </ul>
                 </p>
+                <p>Please select the amount of storage that you need. Below is a rough guide of
+                    how much data you can store with a given capacity.</p>
+                <table>
+                    <thead>
+                    <td>Storage capability</td>
+                    <td>320GB</td>
+                    <td>500GN</td>
+                    <td>1TB = 1000GB</td>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Songs</td>
+                        <td>60,000</td>
+                        <td>125,000</td>
+                        <td>250,000</td>
+                    </tr>
+                    <tr>
+                        <td>Photos</td>
+                        <td>60,000</td>
+                        <td>100,000</td>
+                        <td>200,000</td>
+                    </tr>
+                    <tr>
+                        <td>Videos</td>
+                        <td>24 hours</td>
+                        <td>38 hours</td>
+                        <td>76 hours</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p>If you are not sure, just leave the c</p>
+                <label>Choose storage size:
+                    <select id="storage-size">
+                        <option value="256">Less than 256GB</option>
+                        <option value="256-512">256GB - 512GB</option>
+                        <option value="512-1024" selected>512 GB - 1TB</optionvalue>
+                        <option value="1024">More than 1TB</option>
+                    </select>
+                </label>
+                <p>Now select storage type based on your needs. If you are not sure which to pick, just go with a HDD!</p>
+                <p>Note that some options might be disabled because of your choice above.</p>
+                <label>Choose a storage type:
+                <select id="storage-type">
+                    <option value="SSD">SSD</option>
+                    <option value="HDD" selected>HDD</option>
+                    <option value="SSHD">SSHD</option>
+                </select>
+                </label>
+
+
+
+
             </fieldset>
             <div class="row">
                 <div class="small-12 large-4"></div>
@@ -286,10 +334,12 @@
                 <div class="row">
                     <div class="small-12 medium-6 columns">
 
-                        <input type="checkbox" id="design-checkbox"><label for="design-checkbox">Design</label>
+                        <input type="checkbox" id="design-checkbox"><label for="design-checkbox">Design - I want a
+                    computer that has a pretty case!</label>
                     </div>
                     <div class="small-12 medium-6 columns">
-                        <input type="checkbox" id="security-checkbox"><label for="security-checkbox">Security</label>
+                        <input type="checkbox" id="security-checkbox"><label for="security-checkbox">Security - I would like
+                    to be protected when browsing the Internet.</label>
                     </div>
                 </div>
 
@@ -299,7 +349,7 @@
                 <div class="small-12 large-4">
                     <div class="expanded button-group">
                         <a class="button prev-page">Previous</a>
-                        <a class="button find-laptop">Find me a laptop</a>
+                        <a class="button" id="find-laptop">Find a computer for me</a>
                     </div>
                 </div>
                 <div class="small-12 large-4"></div>

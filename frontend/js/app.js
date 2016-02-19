@@ -7,7 +7,6 @@ $(document).ready(function(){
         adjustImgSize(elem);
     });
 
-
     $(window).resize(function() {
         console.log('resize');
         $('.background-image').each(function(index, elem) {
@@ -75,9 +74,49 @@ $(document).ready(function(){
 
 });
 
-    $('#portability-slider').change(function() {
-        console.log(this.value);
-    })
+
+    $('#portability-slider').on('moved.zf.slider', function() {
+        var val = $('#portability-slider').children('input').val();
+        var message = "";
+        if (val > 7.5) {
+            message = "I will carry it with me a lot of times, I want it to be light and have the best battery life I can get.";
+        }
+        else if (val > 5) {
+            message = "I would like to carry the laptop with me around town, so it should be reasonably light and have a decent battery life."
+        }
+        else if (val > 2.5) {
+            message = " I will move it around the house mostly. It does not need to be that portable.";
+        }
+        else {
+            message = "It will stay in one place only. A desktop computer is ok with me!";
+        }
+        $('#portability-message').text(message);
+    });
+
+    $('#find-laptop').click(function() {
+        var q = {};
+
+        //first page
+        q.gaming = $('#gaming').prop("checked");
+        q.gameTypes = $("#choose-game-tier").find("input[type='radio']:checked").val();
+        q.media = $('#media').prop("checked");
+        q.homeUse = $('#home-use').prop("checked");
+        q.business = $('#business').prop("checked");
+        q.mediaTypes = [];
+        $('#choose-media-types').find("input[type='checkbox']").each(function() {
+            if(this.checked) q.mediaTypes.push(this.value);
+        });
+
+        //second page
+        q.portability = $("#portability-slider").find("input").val();
+
+        q.storageType = $('#storage-type').find('option:selected').val();
+        q.storageSize = $('#storage-size').find('option:selected').val();
+        console.log(q);
+
+
+
+    });
 });
 
 
@@ -117,4 +156,8 @@ function validate1() {
 
 function validate2() {
     return true;
+}
+
+function sumbitForm(q) {
+
 }
