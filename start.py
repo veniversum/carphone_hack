@@ -61,7 +61,7 @@ def index():
 @app.route("/results", methods=['POST'])
 def results():
     print json.dumps(request.form.to_dict())
-    return render_template('results.html', form=json.dumps(request.form.to_dict()))
+    return render_template('results.html', form=request.form.to_dict())
 
 
 

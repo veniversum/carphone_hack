@@ -7,7 +7,7 @@
     <title>Currys Smart Shopping Assistant</title>
     <link rel="stylesheet" href="css/app.css">
     <script>
-        var form =  JSON.parse( '{{form}}' );
+        var form =  JSON.parse('{{form|tojson|safe}}' );
     </script>
 </head>
 <body>
@@ -54,9 +54,54 @@
     </div>
 </nav>
 <div class="row" id="results">
-
+    <h4>We found something just for you:</h4>
     <div class="small-12 columns ">
         <!-- repeat results -->
+        <div class="row result ">
+            <div class="small-12 medium-3 columns"><img src="img/u_10118354.jpg"></div>
+            <div class="small-12 medium-6 columns">
+                <h5>APPLE MacBook Pro 13" with Retina Display (2015)</h5>
+                <ul>
+                    <li>OS X Yosemite</li>
+                    <li>Intel® Core™ i5 processor</li>
+                    <li>Memory: 8 GB</li>
+                    <li> Storage: 128 GB SSD</li>
+                    <li>Up to 9 hours battery life</li>
+                </ul>
+            </div>
+            <div class="small-12 medium-3 columns">
+                <div class="price"><span class="special-price">£999.99</span></div>
+                <div>
+                    <ul class="with-ticks">
+                        <li>FREE delivery available</li>
+                        <li>FREE collect in store available</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row result ">
+            <div class="small-12 medium-3 columns"><img src="img/u_10142583.jpg"></div>
+            <div class="small-12 medium-6 columns">
+                <h5>LENOVO MIIX 300 10.1" 2 in 1 - Black</h5>
+                <ul>
+                    <li>Windows 10 (pre-installed)</li>
+                    <li>Intel® Atom™ Processor Z3735F</li>
+                    <li>Memory: 2 GB</li>
+                    <li> Storage: 32 GB eMMC</li>
+                    <li>Up to 9 hours battery life</li>
+                </ul>
+            </div>
+            <div class="small-12 medium-3 columns">
+                <div class="price"><span class="special-price">£399.99</span> Save £100.00</div>
+                <div class="old-price"><strong>Was £499.99</strong> (from 24/12/15 to 14/01/16)</div>
+                <div>
+                    <ul class="with-ticks">
+                        <li>FREE delivery available</li>
+                        <li>FREE collect in store available</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="row result ">
             <div class="small-12 medium-3 columns"><img src="img/u_10142583.jpg"></div>
             <div class="small-12 medium-6 columns">
