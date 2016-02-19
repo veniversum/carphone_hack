@@ -54,7 +54,7 @@
 
 <div class="row container">
     <div class="small-12 columns">
-        <h2>Currys Computer Assistant</h2>
+        <h2>Currys Laptop Buying Assistant</h2>
         <p>Welcome to our smart assistant that will guide you through the process of
             choosing the right desktop or laptop! Please answer a couple of questions and we will
             tailor some suggestions for you.</p>
@@ -141,6 +141,7 @@
                     </div>
                 </div>
             </fieldset>
+
             <fieldset class="fieldset" id="choose-media-types" style=" display: none;">
                 <legend>What kind of media? Tick all that apply:</legend>
 
@@ -189,10 +190,10 @@
                 <legend>How portable should be your computer?</legend>
                 <div class="row">
                     <div class="small-12 columns align-justify">
-                        <div class="slider" id="portability-slider" data-slider data-initial-start="3" data-end="3">
+                        <div class="slider"  data-slider data-initial-start="3" data-end="3">
                             <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
                             <span class="slider-fill" data-slider-fill></span>
-                            <input type="hidden">
+                            <input id="portability-slider" type="hidden">
                         </div>
                     </div>
                     <div class="small-12 columns">
@@ -202,21 +203,35 @@
                         </p>
                     </div>
                 </div>
-                <h4>Storage</h4>
-                <fieldset class="fieldset">
-                    <legend>How much storage do you need?</legend>
-                    <p>There are things to consider when picking the type of your drive. There are three main types
-                    of internal storage:
-                    <ul>
-                    <li>HDD - Hard Disk Drives. They contain a rotating disk covered in magnetic material and a moving
-                    </li>
-                    </ul>
-                    </p>
-                </fieldset>
+
 
 
             </fieldset>
-
+            <h4>Storage</h4>
+            <fieldset class="fieldset">
+                <legend>How much storage do you need?</legend>
+                <p>There are things to consider when picking the type of your drive. There are three main types
+                    of internal storage:
+                <ul>
+                    <li>HDD - Hard Disk Drives. These are the ones that you can find in most laptops and PCs.
+                        They contain a rotating disk covered in magnetic material and a
+                        moving arm that reads data off the disks. Because of all the mechanical parts they tend to
+                        be slow. However, they offer the most storage capacity.
+                    </li>
+                    <li>
+                        SSD - Solid State Drives. As the name suggests, they contain no moving parts and therefore
+                        are much faster than HDDs, allowing your computer to start up and load things from memory much faster,
+                        which means less waiting! Also, they do not drain battery as much as HDDs. However, the technology is quite new and so the drives usually have
+                        less capacity than HDDs with the same price.
+                    </li>
+                    <li>
+                        SSHD - Solid State Hybrid Drives. SSHDs contain both a HDD and an SSD so you can get the best
+                        of both worlds. All the files that the computer has to access frequently are on the SSD, while
+                        the bulk storage is on the HDD. Nice!
+                    </li>
+                </ul>
+                </p>
+            </fieldset>
             <div class="row">
                 <div class="small-12 large-4"></div>
                 <div class="small-12 large-4">
@@ -267,23 +282,14 @@
 
             <h4>Other</h4>
             <fieldset class="fieldset">
-                <legend>How much do you care about following?</legend>
+                <legend>Do you care about following?</legend>
                 <div class="row">
                     <div class="small-12 medium-6 columns">
-                        Design
-                        <div class="slider" id="design-slider" data-slider data-initial-start="50" data-end="200">
-                            <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
-                            <span class="slider-fill" data-slider-fill></span>
-                            <input type="hidden">
-                        </div>
+
+                        <input type="checkbox" id="design-checkbox"><label for="design-checkbox">Design</label>
                     </div>
                     <div class="small-12 medium-6 columns">
-                        Security
-                        <div class="slider" id="security-slider" data-slider data-initial-start="50" data-end="200">
-                            <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
-                            <span class="slider-fill" data-slider-fill></span>
-                            <input type="hidden">
-                        </div>
+                        <input type="checkbox" id="security-checkbox"><label for="security-checkbox">Security</label>
                     </div>
                 </div>
 
