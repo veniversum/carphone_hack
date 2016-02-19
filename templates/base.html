@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}">
+        <title>{% block title %}{% endblock %}</title>
+        {% endblock %}
+    </head>
+    
+    <body>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
