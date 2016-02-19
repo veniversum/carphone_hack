@@ -44,7 +44,7 @@ function productQuery() {
     }
     //supports AC true/false
     this.wirelessNew = function(bool) {
-        this.q.addFilter("Wireless", bool?"not_like":"like", "%No%");
+        this.q.addFilter("Wireless", bool?"like":"not_like", "%ac%");
     }
     //whether bluetooth is supported
     this.bluetooth = function(bool) {
@@ -52,7 +52,7 @@ function productQuery() {
     }
     //has touchscreen true/false
     this.touchscreen = function(bool) {
-        this.q.addFilter("Touchscreen", bool?"like":"not_like", "%ac%");
+        this.q.addFilter("Touchscreen", bool?"like":"not_like", "%touch%");
     }
     //if true limit weight to <=1.5kg
     this.lightweight = function(bool) {
