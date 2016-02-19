@@ -1,4 +1,5 @@
 import sqlite3
+import json
 from flask import jsonify
 from flask import render_template
 from flask import request
@@ -59,8 +60,8 @@ def index():
 
 @app.route("/results", methods=['POST'])
 def results():
-    print request.form
-    return render_template('results.html', form=str(request.form.to_dict()))
+    print json.dumps(request.form.to_dict())
+    return render_template('results.html', form=json.dumps(request.form.to_dict()))
 
 
 

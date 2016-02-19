@@ -187,3 +187,14 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
   color: $dark-gray;
   font-size: 12px;
 }
+
+.with-ticks {
+  font-size: 14px;
+  list-style: none;
+  li:before {
+    font-family: FontAwesome;
+    content: '\f00c';
+    padding-right: 0.5em;
+    color: green;
+  }
+}
