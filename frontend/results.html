@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currys Smart Shopping Assistant</title>
     <link rel="stylesheet" href="css/app.css">
+    <script>
+        var form =  JSON.parse( '{{form}}' );
+    </script>
 </head>
 <body>
 <!-- TOP BAR -->
@@ -50,8 +53,34 @@
         </ul>
     </div>
 </nav>
-<div class="row">
-{{form}}
+<div class="row" id="results">
+
+    <div class="small-12 columns ">
+        <!-- repeat results -->
+        <div class="row result ">
+            <div class="small-12 medium-3 columns"><img src="img/u_10142583.jpg"></div>
+            <div class="small-12 medium-6 columns">
+                <h5>LENOVO MIIX 300 10.1" 2 in 1 - Black</h5>
+                <ul>
+                    <li>Windows 10 (pre-installed)</li>
+                    <li>Intel® Atom™ Processor Z3735F</li>
+                    <li>Memory: 2 GB</li>
+                    <li> Storage: 32 GB eMMC</li>
+                    <li>Up to 9 hours battery life</li>
+                </ul>
+            </div>
+            <div class="small-12 medium-3 columns">
+                <div class="price"><span class="special-price">£399.99</span> Save £100.00</div>
+                <div class="old-price"><strong>Was £499.99</strong> (from 24/12/15 to 14/01/16)</div>
+                <div>
+                    <ul class="with-ticks">
+                        <li>FREE delivery available</li>
+                        <li>FREE collect in store available</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -60,5 +89,5 @@
 <script src="bower_components/velocity/velocity.ui.js"></script>
 <script src="bower_components/what-input/what-input.js"></script>
 <script src="bower_components/foundation-sites/dist/foundation.js"></script>
-<script src="js/app.js"></script>
+<script src="js/results.js"></script>
 </html>

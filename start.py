@@ -1,4 +1,5 @@
 import sqlite3
+import json
 from flask import jsonify
 from flask import render_template
 from flask import request
@@ -14,7 +15,7 @@ from flask.ext.restless import APIManager
 app = Flask(__name__, template_folder='frontend',
             static_folder='frontend', static_url_path="")
 app.config['DEBUG'] = True
-# app.config['STATIC_FOLDER'] = 'static'
+app.config['STATIC_FOLDER'] = 'frontend'
 engine = create_engine('sqlite:///data/specs.db', convert_unicode=True)
 Session = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 mysession = scoped_session(Session)
@@ -60,8 +61,8 @@ def index():
 
 @app.route("/results", methods=['POST'])
 def results():
-    print request.form
-    return render_template('results.html', form=str(request.form.to_dict()))
+    print json.dumps(request.form.to_dict())
+    return render_template('results.html', form=json.dumps(request.form.to_dict()))
 
 
 if __name__ == "__main__":

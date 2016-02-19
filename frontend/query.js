@@ -8,6 +8,9 @@ function ufilter(name, op, val) {
         this.name = name;
         this.op = op;
 }
+function boolOR (f1, f2) {
+        this.or = [f1, f2]
+}
 
 function query() {
     this.filters = new Array();
@@ -44,7 +47,7 @@ function productQuery() {
     }
     //supports AC true/false
     this.wirelessNew = function(bool) {
-        this.q.addFilter("Wireless", bool?"like":"not_like", "%ac%");
+        this.q.addFilter("Wireless", bool?"like":"not_like", "%a%c%");
     }
     //whether bluetooth is supported
     this.bluetooth = function(bool) {

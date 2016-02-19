@@ -158,3 +158,43 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
   }
 }
 
+#results {
+  padding: 2em;
+}
+
+.special-price {
+  color: #b10000;
+  font-weight:bold;
+  font-size: 18px;
+
+}
+
+.price {
+  padding: 0.25em 0.5em;
+  text-align: center;
+  border-top: 1px $medium-gray solid;
+  border-bottom: 1px $medium-gray solid;
+}
+
+.result {
+  padding: 0.75em 0.25em;
+  border: 1px solid $blue-light;
+}
+
+.old-price {
+  padding: 0.5em 0;
+  text-align: center;
+  color: $dark-gray;
+  font-size: 12px;
+}
+
+.with-ticks {
+  font-size: 14px;
+  list-style: none;
+  li:before {
+    font-family: FontAwesome;
+    content: '\f00c';
+    padding-right: 0.5em;
+    color: green;
+  }
+}
