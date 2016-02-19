@@ -1,377 +1,393 @@
 <!doctype html>
 <html class="no-js" lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currys Smart Shopping Assistant</title>
-    <link rel="stylesheet" href="css/app.css">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currys Smart Shopping Assistant</title>
+  <link rel="stylesheet" href="css/app.css">
 </head>
+
 <body>
-<!-- TOP BAR -->
-<div class="currys-top-bar">
+  <!-- TOP BAR -->
+  <div class="currys-top-bar">
     <div class="row">
-        <div class="small-12 medium-expand medium-4 columns">
-            <div class="currys-logo">Chicken Currys</div>
-        </div>
-        <div class="small-12 medium-4 columns">
-            <div class="row">
+      <div class="small-12 medium-expand medium-4 columns">
+        <div class="currys-logo">Chicken Currys</div>
+      </div>
+      <div class="small-12 medium-4 columns">
+        <div class="row">
 
-                <div class="input-group currys-search">
-                    <input class="input-group-field" type="search" placeholder="Search">
-                    <div class="input-group-button">
-                        <input type="submit" class="button" value="Search">
-                    </div>
-                </div>
+          <div class="input-group currys-search">
+            <input class="input-group-field" type="search" placeholder="Search">
+            <div class="input-group-button">
+              <input type="submit" class="button" value="Search">
             </div>
+          </div>
         </div>
-        <div class="small-12 large-4 medium-expand columns">
-            <div class="user-buttons-responsive">
-                <a class="button-hollow-dark"><i class="fa fa-map-marker"></i> Stores</a>
-                <a class="button-hollow-dark"><i class="fa fa-user"></i> Account</a>
-                <button type="button" class="button"><i class="fa fa-shopping-basket"></i> Basket</button>
-            </div>
+      </div>
+      <div class="small-12 large-4 medium-expand columns">
+        <div class="user-buttons-responsive">
+          <a class="button-hollow-dark"><i class="fa fa-map-marker"></i> Stores</a>
+          <a class="button-hollow-dark"><i class="fa fa-user"></i> Account</a>
+          <button type="button" class="button"><i class="fa fa-shopping-basket"></i> Basket</button>
         </div>
+      </div>
     </div>
-</div>
-<nav id="" class="row">
+  </div>
+  <nav id="" class="row">
     <div class="columns expand clearfix">
-        <ul class="menu align-center currys-menu">
-            <li><a href="#"><i class="fa fa-home"></i></a></li>
-            <li><a href="#">Kitchen Appliances</a></li>
-            <li><a href="#">Small Appliances</a></li>
-            <li><a href="#">TV & Entertainment</a></li>
-            <li><a href="#">Cameras</a></li>
-            <li><a href="#">Audio</a></li>
-            <li><a href="#">Computing</a></li>
-            <li><a href="#">PC Accessories</a></li>
-            <li><a href="#">Phones</a></li>
-            <li><a href="#">Smart Tech</a></li>
-        </ul>
+      <ul class="menu align-center currys-menu">
+        <li><a href="#"><i class="fa fa-home"></i></a></li>
+        <li><a href="#">Kitchen Appliances</a></li>
+        <li><a href="#">Small Appliances</a></li>
+        <li><a href="#">TV & Entertainment</a></li>
+        <li><a href="#">Cameras</a></li>
+        <li><a href="#">Audio</a></li>
+        <li><a href="#">Computing</a></li>
+        <li><a href="#">PC Accessories</a></li>
+        <li><a href="#">Phones</a></li>
+        <li><a href="#">Smart Tech</a></li>
+      </ul>
     </div>
-</nav>
+  </nav>
 
 
-<div class="row container">
+  <div class="row container">
     <div class="small-12 columns">
-        <h2>Currys Laptop Buying Assistant</h2>
-        <p>Welcome to our smart assistant that will guide you through the process of
-            choosing the right desktop or laptop! Please answer a couple of questions and we will
-            tailor some suggestions for you.</p>
-        <div class="callout alert" style="display:none" id="error" data-closable>
-            <span id="error-message">Dummy callout</span>
-            <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <form id="master-form" action="results" method="post">
+      <h2>Currys Laptop Buying Assistant</h2>
+      <p>Welcome to our smart assistant that will guide you through the process of choosing the right desktop or laptop! Please answer a couple of questions and we will tailor some suggestions for you.</p>
+      <div class="callout alert" style="display:none" id="error" data-closable>
+        <span id="error-message">Dummy callout</span>
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form id="master-form" action="results" method="post">
         <div id="page1">
 
-            <h4>What is the purpose of this computer?</h4>
-            <fieldset id="main-purpose" class="fieldset">
-                <legend>Check the boxes if you think you will use the computer for:</legend>
-                <input id="gaming" name="gaming" type="checkbox"><label for="gaming">Gaming</label>
-                <input id="media" name="media"type="checkbox"><label for="media">Media</label>
-                <input id="business" name="business" type="checkbox"><label for="business">Business</label>
-                <input id="home-use" name="homeUse" type="checkbox"><label for="home-use">Home use</label>
+          <h4>What is the purpose of this computer?</h4>
+          <fieldset id="main-purpose" class="fieldset">
+            <legend>Check the boxes if you think you will use the computer for:</legend>
+            <input id="gaming" name="gaming" type="checkbox">
+            <label for="Gaming">
+              <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="High resolution,3D Graphics, Awesome stereos, No lag; No DC">Gaming</span>
+            </label>
 
-            </fieldset>
+            <input id="media" name="media" type="checkbox">
+            <label for="Media">
+              <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Photoshop, Video editing, Design softwares">Media</span>
+            </label>
 
-            <fieldset id="choose-game-tier" class="fieldset" style=" display: none;">
-                <legend>Okay then, what games will you play on your new laptop?</legend>
-                <div class="row">
-                    <div class="medium-4 small-12 columns">
-                        <div class="high-end-games">
-                            <div class="background-image witcher"></div>
-                            <div class="game-info-container">
-                                <div class="game-label">
-                                    <input type="radio" name="game-tier" value="high" id="high-end" required><label
-                                        for="high-end">High-end</label>
-                                </div>
-                                <p class="explanation">
-                                    I would like to play the newest games that are rich in 3D graphics. These games need
-                                    a
-                                    lot
-                                    of processing power from the computer
-                                    and require a dedicated high-performance graphics card that will be able to able to
-                                    handle
-                                    these requirements.
-                                    Desktop computers usually have better graphics cards - space is not a constraint and
-                                    powerful graphics cards tend
-                                    to be bulky.
+            <input id="business" name="business" type="checkbox">
+            <label for="Business">
+              <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Heavy duty, Data spreadsheet, Emails, Presentation, Video conferencing">Business</span>
+            </label>
 
-                                </p>
-                                <p class="explanation">
-                                    Example games: The Witcher 3, GTA V
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="medium-4 small-12 columns ">
-                        <div class="mid-end-games">
-                            <div class="background-image fifa"></div>
-                            <div class="game-info-container">
-                                <div class="game-label">
-                                    <input type="radio" name="game-tier" value="mid" id="mid-end" required><label
-                                        for="mid-end">Mid-end</label>
-                                </div>
-                                <p class="explanation">
-                                    I would only like to play games that came out some time ago or are not that
-                                    graphics-heavy.
-                                    A slower graphics card will do the job here and will give a better value for money.
-
-                                </p>
-                                <p class="explanation">
-                                    Example games: The Elder Scrolls V: Skyrim, FIFA 16
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="medium-4 small-12 columns">
-                        <div class="low-end-games">
-                            <div class="background-image candy-crush"></div>
-                            <div class="game-info-container">
-                                <div class="game-label">
-                                    <input type="radio" name="game-tier" value="low" id="low-end"
-                                           required><label for="low-end">Low-end</label>
-                                </div>
-                                <p class="explanation">
-                                    I would only like to play casual games, or games that run in browser, or old-school
-                                    stuff.
-                                    A dedicated graphics card is most likely not needed for those type of games.
-                                </p>
-                                <p class="explanation">
-                                    Example games: Candy Crush Saga, Game of War, Baldurs Gate II
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
-
-            <fieldset class="fieldset" id="choose-media-types" style=" display: none;">
-                <legend>What kind of media? Tick all that apply:</legend>
-
-                <div class="medium-12 large-expand columns"><input id="audio-playback" name="audio" type="checkbox"><label
-                        for="audio-playback">
-                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1
-                      title="High Definition">HD</span>
-                    audio playback
-                </label></div>
-
-                <div class="medium-12 large-expand columns"><input id="watching-videos" name="videos" type="checkbox"><label
-                        for="watching-videos">Watching
-                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1
-                      title="High Definition">HD</span>
-                    videos</label></div>
-                <div class="medium-12 large-expand columns"><input id="image-editing" name="imageEditing" type="checkbox"><label
-                        for="image-editing">Editing images/Graphic design</label></div>
-
-                <div class="medium-12 large-expand columns"><input id="video-editing" name="videoEditing" type="checkbox"><label
-                        for="video-editing">Editing
-                    videos</label>
-                </div>
-                <div class="medium-12 large-expand columns"><input id="audio-editing" name="audioEditing" type="checkbox"><label
-                        for="audio-editing">Editing
-                    audio/Music production</label></div>
-            </fieldset>
+            <input id="home-use" name="family" type="checkbox">
+            <label for="Home-use">
+              <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Social Media, Youtube, Finding Recipes">Family | Home-use</span>
+            </label>
 
 
+          </fieldset>
+
+          <fieldset id="choose-game-tier" class="fieldset" style=" display: none;">
+            <legend>Okay then, what games will you play on your new laptop?</legend>
             <div class="row">
-                <div class="small-12 large-4"></div>
-                <div class="small-12 large-4">
-                    <div class="expanded button-group">
-                        <a class="button next-page">Next</a>
+              <div class="medium-4 small-12 columns">
+                <div class="high-end-games">
+                  <div class="background-image witcher"></div>
+                  <div class="game-info-container">
+                    <div class="game-label">
+                      <input type="radio" name="game-tier" value="high" id="high-end" required>
+                      <label for="high-end">High-end</label>
                     </div>
+                    <p class="explanation">
+                      I would like to play the newest games that are rich in 3D graphics. I need processing power and a dedicated high-performance graphics card that will be able to able to handle these requirements. Desktop computers usually have better graphics cards - space
+                      is not a constraint and powerful graphics cards tend to be bulky.
+
+                    </p>
+                    <p class="explanation">
+                      Example games: The Witcher 3, GTA V
+                    </p>
+                  </div>
                 </div>
-                <div class="small-12 large-4"></div>
+              </div>
+              <div class="medium-4 small-12 columns ">
+                <div class="mid-end-games">
+                  <div class="background-image fifa"></div>
+                  <div class="game-info-container">
+                    <div class="game-label">
+                      <input type="radio" name="game-tier" value="mid" id="mid-end" required>
+                      <label for="mid-end">Mid-end</label>
+                    </div>
+                    <p class="explanation">
+                      I would only like to play games that came out some time ago or are not that graphics-heavy. A slower graphics card will do the job here and will give a better value for money.
+
+                    </p>
+                    <p class="explanation">
+                      Example games: The Elder Scrolls V: Skyrim, FIFA 16
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="medium-4 small-12 columns">
+                <div class="low-end-games">
+                  <div class="background-image candy-crush"></div>
+                  <div class="game-info-container">
+                    <div class="game-label">
+                      <input type="radio" name="game-tier" value="low" id="low-end" required>
+                      <label for="low-end">Low-end</label>
+                    </div>
+                    <p class="explanation">
+                      I would only like to play casual games, or games that run in browser, or old-school stuff. A dedicated graphics card is most likely not needed for those type of games.
+                    </p>
+                    <p class="explanation">
+                      Example games: Candy Crush Saga, Game of War, Baldurs Gate II
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </fieldset>
+
+          <fieldset class="fieldset" id="choose-media-types" style=" display: none;">
+            <legend>What kind of media? Tick all that apply:</legend>
+
+            <div class="medium-12 large-expand columns">
+              <input id="audio-playback" name="audio" type="checkbox">
+              <label for="audio-playback">
+                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="High Definition">HD</span> audio playback
+              </label>
+            </div>
+
+            <div class="medium-12 large-expand columns">
+              <input id="watching-videos" name="videos" type="checkbox">
+              <label for="watching-videos">Watching
+                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="High Definition">HD</span> videos
+              </label>
+            </div>
+            <div class="medium-12 large-expand columns">
+              <input id="image-editing" name="imageEditing" type="checkbox">
+              <label for="image-editing">Editing images/Graphic design</label>
+            </div>
+
+            <div class="medium-12 large-expand columns">
+              <input id="video-editing" name="videoEditing" type="checkbox">
+              <label for="video-editing">Editing videos
+              </label>
+            </div>
+            <div class="medium-12 large-expand columns">
+              <input id="audio-editing" name="audioEditing" type="checkbox">
+              <label for="audio-editing">Editing audio/Music production</label>
+            </div>
+          </fieldset>
+
+
+          <div class="row">
+            <div class="small-12 large-4"></div>
+            <div class="small-12 large-4">
+              <div class="expanded button-group">
+                <a class="button next-page">Next</a>
+              </div>
+            </div>
+            <div class="small-12 large-4"></div>
+          </div>
         </div>
 
         <div id="page2" style=" display: none;">
-            <h4>Portability</h4>
-            <fieldset class="fieldset">
-                <legend>How portable should be your computer?</legend>
-                <div class="row">
-                    <div class="small-12 columns align-justify">
-                        <div class="slider" id="portability-slider" data-slider data-initial-start="0" data-end="10">
-                            <span class="slider-handle" data-slider-handle role="slider" ></span>
-                            <span class="slider-fill" data-slider-fill></span>
-                            <input name="portability" type="hidden">
-                        </div>
-                    </div>
-                    <div class="small-12 columns">
-                        <p class="" id="portability-message">
-                            I will carry it with me a lot of times, I want it to be light
-                            and have the best battery life I can get.
-                        </p>
-                    </div>
-                </div>
-
-            </fieldset>
-            <h4>Storage</h4>
-            <fieldset class="fieldset">
-                <legend>How much storage do you need?</legend>
-                <p>First, please select the amount of storage that you need. Below is a rough guide of
-                    how much data you can store with a given capacity.</p>
-                <table>
-                    <thead>
-                    <td>Storage capability</td>
-                    <td>320GB</td>
-                    <td>500GN</td>
-                    <td>1TB = 1000GB</td>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Songs</td>
-                        <td>60,000</td>
-                        <td>125,000</td>
-                        <td>250,000</td>
-                    </tr>
-                    <tr>
-                        <td>Photos</td>
-                        <td>60,000</td>
-                        <td>100,000</td>
-                        <td>200,000</td>
-                    </tr>
-                    <tr>
-                        <td>Videos</td>
-                        <td>24 hours</td>
-                        <td>38 hours</td>
-                        <td>76 hours</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <p>If you are not sure, 1TB should be plenty.</p>
-
-                <label>Choose storage size:
-                    <select name="storageSize" id="storage-size">
-                        <option value="256">Less than 256GB</option>
-                        <option value="256-512">256GB - 512GB</option>
-                        <option value="512-1024" selected>512 GB - 1TB</option>
-                        <option value="1024">More than 1TB</option>
-                    </select>
-                </label>
-                <p>There are three main types of internal storage:
-                <ul>
-                    <li>HDD - Hard Disk Drives. These are the ones that you can find in most laptops and PCs.
-                        They contain a rotating disk covered in magnetic material and a
-                        moving arm that reads data off the disks. Because of all the mechanical parts they tend to
-                        be slow. However, they offer the most storage capacity.
-                    </li>
-                    <li>
-                        SSD - Solid State Drives. As the name suggests, they contain no moving parts and therefore
-                        are much faster than HDDs, allowing your computer to start up and load things from memory much faster,
-                        which means less waiting! Also, they do not drain battery as much as HDDs. However, the technology is quite new and so the drives usually have
-                        less capacity than HDDs with the same price.
-                    </li>
-                    <li>
-                        SSHD - Solid State Hybrid Drives. SSHDs contain both a HDD and an SSD so you can get the best
-                        of both worlds. All the files that the computer has to access frequently are on the SSD, while
-                        the bulk storage is on the HDD. Nice!
-                    </li>
-                </ul>
-                </p>
-                <p>Select storage type based on your needs. If you are not sure which to pick, just go with a HDD!</p>
-                <p>Note that some options might be disabled because of your choice above.</p>
-                <label>Choose a storage type:
-                <select name="storageType" id="storage-type">
-                    <option value="SSD">SSD</option>
-                    <option value="HDD" selected>HDD</option>
-                    <option value="SSHD">SSHD</option>
-                </select>
-                </label>
-
-
-
-
-            </fieldset>
+          <h4>Portability</h4>
+          <fieldset class="fieldset">
+            <legend>How portable should be your computer?</legend>
             <div class="row">
-                <div class="small-12 large-4"></div>
-                <div class="small-12 large-4">
-                    <div class="expanded button-group">
-                        <a class="button prev-page">Previous</a>
-                        <a class="button next-page">Next</a>
-                    </div>
+              <div class="small-12 columns align-justify">
+                <div class="slider" id="portability-slider" data-slider data-initial-start="0" data-end="10">
+                  <span class="slider-handle" data-slider-handle role="slider"></span>
+                  <span class="slider-fill" data-slider-fill></span>
+                  <input name="portability" type="hidden">
                 </div>
-                <div class="small-12 large-4"></div>
+              </div>
+              <div class="small-12 columns">
+                <p class="" id="portability-message">
+                  I will carry it with me a lot of times, I want it to be light and have the best battery life I can get.
+                </p>
+              </div>
             </div>
+
+          </fieldset>
+          <h4>Storage</h4>
+          <fieldset class="fieldset">
+            <legend>How much storage do you need?</legend>
+            <p>First, please select the amount of storage that you need. Below is a rough guide of how much data you can store with a given capacity.</p>
+            <table>
+              <thead>
+                <td>Storage capability</td>
+                <td>320GB</td>
+                <td>500GB</td>
+                <td>1TB (*1000GB*)</td>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Songs</td>
+                  <td>60,000</td>
+                  <td>125,000</td>
+                  <td>250,000</td>
+                </tr>
+                <tr>
+                  <td>Photos</td>
+                  <td>60,000</td>
+                  <td>100,000</td>
+                  <td>200,000</td>
+                </tr>
+                <tr>
+                  <td>Videos</td>
+                  <td>24 hours</td>
+                  <td>38 hours</td>
+                  <td>76 hours</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>If you are not sure, 1TB should be plenty.</p>
+
+            <label>Choose storage size:
+              <select name="storageSize" id="storage-size">
+                <option value="256">Less than 256GB</option>
+                <option value="256-512">256GB - 512GB</option>
+                <option value="512-1024" selected>512 GB - 1TB</option>
+                <option value="1024">More than 1TB (We have poortable hard disks as well)</option>
+              </select>
+            </label>
+            <p>There are three main types of internal storage:
+              <ul>
+                <li>
+                  <i><em>HDD - Hard Disk Drives.</i> </em>
+                  <br>Slow but cheap and offer A LOT of storage capacity.
+                  <!-- These are the ones that you can find in most laptops and PCs. They contain a rotating disk covered in magnetic material and a moving arm that reads data off the disks. Because of all the mechanical parts
+                    they tend to be slow. However, they offer the most storage capacity. -->
+                </li>
+                <br>
+                <li>
+                  <i><em>SSD - Solid State Drives.</i></em>
+                  <br>So fast that it loads within a blink of an eye! Slightly more expensive than HDD.
+                  <!-- As the name suggests, they contain no moving parts and therefore are much faster than HDDs, allowing your computer to start up and load things from memory much faster, which means less waiting! Also,
+                  they do not drain battery as much as HDDs. However, the technology is quite new and so the drives usually have less capacity than HDDs with the same price. -->
+                </li>.
+                <br>
+                <li>
+                  <i>SSHD - Solid State Hybrid Drives.  (User Choice!)</i>
+                  <br> <em> The Best of Both World! </em> With HDD and SSD, frequently accessed files are on the <i>Flash</i> memory, so you have speed!
+                  <br> While the rest are on the hard disk, so you have <b>extra storage</b>.
+                </li>
+                <br>
+              </ul>
+            </p>
+            <p>Select storage type based on your needs. If you are not sure which to pick,
+              <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="The best in value, giving you the latest technology and speed!">let us pick for you (SSHD)!</span>
+            </p>
+            <!-- <p>Note that some options might be disabled because of your choice above.</p> -->
+            <label>Choose a storage type:
+              <select name="storageType" id="storage-type">
+                <option value="SSD">SSD</option>
+                <option value="HDD">HDD</option>
+                <option value="SSHD" selected>SSHD</option>
+              </select>
+            </label>
+
+
+          </fieldset>
+          <div class="row">
+            <div class="small-12 large-4"></div>
+            <div class="small-12 large-4">
+              <div class="expanded button-group">
+                <a class="button prev-page">Previous</a>
+                <a class="button next-page">Next</a>
+              </div>
+            </div>
+            <div class="small-12 large-4"></div>
+          </div>
         </div>
 
         <div id="page3" style=" display: none;">
-            <h4>Connectivity</h4>
-            <fieldset class="fieldset" id="connectivity">
-                <legend>Would you like to:</legend>
-                <div>
-                    <input id="external-screens" value="externalScreens" type="checkbox">
-                    <label for="external-screens">Connect your laptop to external screens? (laptops only)</label>
-                </div>
+          <h4>Connectivity</h4>
+          <fieldset class="fieldset" id="connectivity">
+            <legend>Would you like to:</legend>
 
-                <div>
-                    <input id="bluetooth" name="bluetooth" type="checkbox">
-                    <label for="bluetooth">Connect to wireless headsets or your smartphone? (Bluetooth)</label>
-                </div>
-
-                <div>
-                    <input id="read-dvd" name="dvdRead" type="checkbox">
-                    <label for="read-dvd">Be able to read DVD disks?</label>
-                </div>
-
-                <div>
-                    <input id="write-dvd" name="dvdWrite" type="checkbox">
-                    <label for="write-dvd">Be able to write DVD disks?</label>
-                </div>
-
-                <div>
-                    <input id="bluray" name="bluray" type="checkbox">
-                    <label for="bluray">Be able to read Blu-ray disks?</label>
-                </div>
-
-                <div>
-                    <input id="sd-card" name="sdCard" type="checkbox">
-                    <label for="sd-card">Plug your camera's memory card into the laptop?</label>
-                </div>
-
-            </fieldset>
-
-            <h4>Other</h4>
-            <fieldset class="fieldset" id="extra-options">
-                <legend>Do you care about following?</legend>
-                <div class="row">
-                    <div class="small-12 medium-6 columns">
-
-                        <input type="checkbox" id="design-checkbox"><label for="design-checkbox">Design - I want a
-                    computer that has a pretty case!</label>
-                    </div>
-                    <div class="small-12 medium-6 columns">
-                        <input type="checkbox" id="security-checkbox"><label for="security-checkbox">Security - I would like
-                    to be protected when browsing the Internet.</label>
-                    </div>
-                </div>
-
-            </fieldset>
-            <div class="row">
-                <div class="small-12 large-4"></div>
-                <div class="small-12 large-4">
-                    <div class="expanded button-group">
-                        <a class="button prev-page">Previous</a>
-                        <a class="button" id="find-laptop">Find a computer for me</a>
-                    </div>
-                </div>
-                <div class="small-12 large-4"></div>
+            <div>
+              <input id="external-screens" value="externalScreens" type="checkbox">
+              <label for="external-screens">Project onto <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="TV, Monitor, Projector">external screens</span> ?
+              </label>
             </div>
+
+            <div>
+              <input id="bluetooth" name="bluetooth" type="checkbox">
+              <label for="bluetooth">Connect to
+                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="Phone, Speakers, Gopro"> wireless devices using Bluetooth</span> ?
+              </label>
+            </div>
+
+            <div>
+              <input id="read-dvd" name="dvdRead" type="checkbox">
+              <label for="read-dvd">Be able to read DVD disks?</label>
+            </div>
+
+            <!-- <div>
+              <input id="write-dvd" name="dvdWrite" type="checkbox">
+              <label for="write-dvd">Be able to write DVD disks?</label>
+            </div> -->
+
+            <div>
+              <input id="bluray" name="bluray" type="checkbox">
+              <label for="bluray">Be able to read Blu-ray disks?</label>
+            </div>
+
+            <div>
+              <input id="sd-card" name="sdCard" type="checkbox">
+              <label for="sd-card">Read your memory (SD) card directly?</label>
+            </div>
+
+          </fieldset>
+
+          <h4>Other</h4>
+          <fieldset class="fieldset" id="extra-options">
+            <legend>Do you care about following?</legend>
+            <div class="row">
+              <div class="small-12 medium-6 columns">
+
+                <input type="checkbox" id="design-checkbox">
+                <label for="design-checkbox">Design - I want a computer that has a pretty case!</label>
+              </div>
+              <div class="small-12 medium-6 columns">
+                <input type="checkbox" id="security-checkbox">
+                <label for="security-checkbox">Security - I would like to be protected when browsing the Internet.</label>
+              </div>
+            </div>
+
+          </fieldset>
+          <div class="row">
+            <div class="small-12 large-4"></div>
+            <div class="small-12 large-4">
+              <div class="expanded button-group">
+                <a class="button prev-page">Previous</a>
+                <a class="button" id="find-laptop">Find a computer for me</a>
+              </div>
+            </div>
+            <div class="small-12 large-4"></div>
+          </div>
         </div>
-        </form>
+      </form>
     </div>
-</div>
+  </div>
 
 
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/jquery-ui/jquery-ui.js"></script>
-<script src="bower_components/velocity/velocity.js"></script>
-<script src="bower_components/velocity/velocity.ui.js"></script>
-<script src="bower_components/what-input/what-input.js"></script>
-<script src="bower_components/foundation-sites/dist/foundation.js"></script>
-<script src="js/app.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+  <script src="bower_components/velocity/velocity.js"></script>
+  <script src="bower_components/velocity/velocity.ui.js"></script>
+  <script src="bower_components/what-input/what-input.js"></script>
+  <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+  <script src="js/app.js"></script>
 </body>
+
 </html>

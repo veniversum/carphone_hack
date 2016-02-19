@@ -10,9 +10,11 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import scoped_session, sessionmaker
 from flask.ext.restless import APIManager
 
-app = Flask(__name__, template_folder='frontend', static_folder='frontend', static_url_path="")
+
+app = Flask(__name__, template_folder='frontend',
+            static_folder='frontend', static_url_path="")
 app.config['DEBUG'] = True
-app.config['STATIC_FOLDER'] = 'static'
+# app.config['STATIC_FOLDER'] = 'static'
 engine = create_engine('sqlite:///data/specs.db', convert_unicode=True)
 Session = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 mysession = scoped_session(Session)
@@ -28,8 +30,6 @@ class Products(Base):
 
 manager = APIManager(app, session=mysession)
 manager.create_api(Products)
-
-
 
 
 def get_db():
@@ -64,7 +64,5 @@ def results():
     return render_template('results.html', form=str(request.form.to_dict()))
 
 
-
 if __name__ == "__main__":
     app.run()
-
