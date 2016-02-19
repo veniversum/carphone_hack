@@ -12,7 +12,6 @@ from flask.ext.restless import APIManager
 
 app = Flask(__name__, template_folder='frontend', static_folder='frontend', static_url_path="")
 app.config['DEBUG'] = True
-app.config['STATIC_FOLDER'] = 'static'
 engine = create_engine('sqlite:///data/specs.db', convert_unicode=True)
 Session = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 mysession = scoped_session(Session)
